@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG - Array</title>
+</head>
+<body>
+    <h1>Lógica de Programação - Array</h1>
+    <script>
+        let planetas = ['Terra','Marte','Netuno', 'Mercúrio']
+                    //     0        1       2          4
+        console.log(typeof(planetas)) // typeof() -> mostra o tipo da variável
+        console.log(planetas.constructor) // constructor -> mostra o tipo do objeto
+        console.log(planetas.length) // length -> mostra o tamanho do array (no caso retorna 3)
+        console.log(planetas[1]) // retorna Marte
+        
+        planetas.forEach(function(valor, i){
+            console.log(`${i+1} - ${valor}`) // mostra os planetas + a númeração de 1 a 4
+        })
+        console.log("------------------")
+
+        let profissoes = new Array("Astronauta","Professor","Engenheiro","Arquiteto")
+        console.log(profissoes)
+        console.log("------------------")
+
+        profissoes.forEach(function(p, c){
+            console.log(`${c+1} - ${p}`) // mostra as profissões + a númeração de 1 a 4
+        })
+        console.log("------------------")
+
+        let livros = [
+            ["Dom Quixote", " Feliz"], // [0] nome dos livros | [1] nome da editora
+            ["Pequeno Príncipe", " Ativa"],
+            ["Capitães de Areia", " Salutar"]
+        ]
+        console.log(livros)
+        console.log("------------------")
+        console.log(livros[1][0]) // retorna Pequeno Príncipe
+        console.log("------------------")
+
+        livros.forEach(function(l,c){
+            console.log(`Livro: ${l[0]}, Editora: ${l[1]}`) 
+        })
+
+    </script>
+</body>
+</html>
