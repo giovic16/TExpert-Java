@@ -9,7 +9,27 @@
 <body>
     <h1>Lógica de Programação - Iterador WHILE</h1>
     <script>
-        
+        let x=0
+        let y=0
+        let animais = ["leão", "avestruz", "golfinho", "águia"] // animais.length = 4
+
+        while(y < animais.length){
+            console.log(animais[y])
+            y++
+        }
+
+        // retorna números de 0 a 9
+        while(x < 10){
+            console.log(x)
+            x++
+        }
+
+        console.log(`Valor de x fora do primeiro laço: ${x}`) // 10
+
+        do{
+            console.log(`x: ${x}`)
+        }
+        while(x < 4)
     </script>
 </body>
 </html>
