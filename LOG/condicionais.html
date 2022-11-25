@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG</title>
+</head>
+<body>
+    <h1>Lógica de Programação - Condicionais</h1>
+
+    <script>
+        //let mensagem = "Condicionais"
+        let mensagem = "Operadores"
+        var modulo = 2
+
+        // if e else
+        if(mensagem == "Condicionais"){
+            console.log(`A aula de hoje é: ${mensagem}`)
+        }else{
+            console.log("Aguarde a próxima aula")
+        }
+
+        // if encadeado 
+        if(mensagem == "Condicionais"){
+            console.log(`A aula de hoje é: ${mensagem}`)
+        }else{
+            console.log("Aguarde a próxima aula")
+            if(modulo >= 2){ //Se o primeiro if for falso será executado o segundo if
+                console.log("Você está no módulo" + modulo)
+            }
+        }
+
+        // if - else if
+        if(mensagem == "Condicionais"){
+            console.log(`A aula de hoje é: ${mensagem}`)
+        }else if(modulo < 2){
+            console.log("Bem vindo iniciante")
+        }
+
+        // ternario
+        modulo >= 2 ? console.log("Módulo dois") : console.log("Módulo anterior")
+
+        // switch case 
+        modulo
+        switch(modulo){
+            case 1: {
+                console.log("Módulo um")
+                break;
+            }
+            case 2: {
+                console.log("Módulo dois")
+                break;
+            }
+            default: {
+                console.log("Finalizado")
+            }
+        }
+    </script>
+</body>
+</html>

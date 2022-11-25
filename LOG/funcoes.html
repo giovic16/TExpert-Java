@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG</title>
+</head>
+<body>
+    <h1>Lógica de Programação - Funções</h1>
+
+    <script>
+        // variáveis
+        let x, y, mensagem, nome
+        x = 34
+        y = 12
+        mensagem = "Front End"
+        //mensagem = "Back End"
+        nome = "Giovana"
+
+        // funções simples
+        function soma(){
+            console.log(`x + y = ${x+y}`)
+        }
+        soma()
+
+        function info(){
+            if(mensagem == "Front End"){
+                let imprime = `Olá ${nome}, bem vindo ao treinamento ${mensagem}`
+                console.log(imprime)
+            }else if(mensagem == "Back End"){
+                let imprime = `Olá ${nome}, bem vindo ao treinamento ${mensagem}`
+                console.log(imprime)
+            }
+        }
+        info()
+
+        // funções de retorno
+        function saudacao(){
+            bemVindo = "Seja bem vindo"
+            return bemVindo
+        }
+        console.log(saudacao())
+
+        function multiplica(){
+            return `x * y = ${x*y}`
+        }
+        console.log(multiplica())
+
+        // funções com parâmetros
+        function calculo(x, y){
+            console.log(`x / y = ${(x / y)}`)
+            //return x / y
+        }
+        calculo(10, 5)
+
+        function calculadora(operacao, x, y, msg){
+            switch(operacao){
+                case 1: {
+                    console.log(`${x} + ${y} = ${(x + y)}`)
+                    //msg = `soma`
+                    console.log(msg)
+                    break;
+                }
+                case 2: {
+                    console.log(`${x} - ${y} = ${(x - y)}`)
+                    //msg = `subtração`
+                    console.log(msg)
+                    break;
+                }
+            }
+        }
+        calculadora(2, 15, 32, " - Subtração") // 2 para escolher a operação (case 2)
+        calculadora(1, 38, 2, " + Soma") // 1 para escolher a operação (case 1)
+    
+        // funções encadeadas
+        function livraria(nomeLivraria){
+            console.log(`Nossa livraria se chama ${nomeLivraria}`)
+                function autor(escritor){
+                    console.log(`Convidados a noite de autógrafos do escritor ${escritor}`)
+                }
+            return autor
+        }
+        livraria("Dos Amigos")("Rodolpho Alves")
+
+        function A (x){
+            console.log(`Função A - x: ${x}`)
+            function B (y){
+                console.log(`Função B - x: ${x} - y: ${y}`)
+                function C(z){
+                    console.log(`Função C - x: ${x} - y: ${y} - z: ${z}`)
+                }
+                C(2)
+            }
+            B(4)
+        }
+        A(1)
+
+    </script>
+</body>
+</html>
