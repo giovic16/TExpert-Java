@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=b, initial-scale=1.0">
+    <title>LOG - For</title>
+</head>
+<body>
+    <h1>Lógica de Programação - Iterador FOR</h1>
+    <script>
+        // inicializador;condição;iterador
+        for(let i = 1; i <= 10; i++){ // i MENOR que 10? Se sim, adicionar 1 na variável i
+            console.log(i)
+        }
+
+        // imprime os 4 nomes do array
+        let nomes = ["Roque", "Marcos", "Rita", "Vinícius"]
+        for(let i = 0; i < 4; i++){
+            console.log(nomes[i]) 
+        }
+
+        // mostra números de 4 em 4, inicializando no 0 (ex: 0, 4, 8...)
+        let j = 0
+        for(; j < 20; j+=4){
+            console.log(j)
+        }
+
+        // mostra números de 6 em 6, inicializando no 0 (ex: 0, 6, 12...)
+        let k = 0
+        for(;; k+=6){
+            console.log(k)
+            if(k>20){
+                break;
+            }
+        }
+
+        // mostra números de 60 em 60, inicializando no 0 (ex: 0, 60, 120...)
+        let w = 0
+        for(;;){
+            console.log(w)
+            if(w>200){
+                break;
+            }
+            w += 60
+        }
+
+        // comando FOR feito em uma linha sem chaves {} - imprime números de 0 a 5
+        for(let n = -1; n < 5; n++, console.log(` -- ${n}`)); 
+
+        // forEach - imprime os 4 nomes do array NOMES e números de 1 a 4
+        nomes.forEach(function(n, i){
+            console.log(`nomes ${i+1}: ${n}`)
+        })
+
+    </script>
+</body>
+</html>
