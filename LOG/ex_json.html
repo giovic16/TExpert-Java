@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOG - JSON</title>
+</head>
+<body>
+    <h1>Lógica de Programação - JSON</h1>
+    <script>
+        let info = '{"produto":"spagheti", "preco":42}'
+        console.log(typeof(info)) // info tipo string
+        let infoJson = JSON.parse(info)
+        console.log(typeof(infoJson)) // infoJson tipo object
+        console.log(infoJson)
+
+        let indices = '[1,4,8,12]'
+        console.log(typeof(indices)) // indices tipo string
+        let novoIndices = JSON.parse(indices) // parses converte string em objeto
+        console.log(typeof(indices))
+        console.log(novoIndices)
+
+        let empresa = {nome:"Nosso Restaurante", fundacao:1980, filial:2, regiao:"Leste"}
+        let infoEmpresa = JSON.parse(JSON.stringify(empresa,['fundacao','filial'])) // stringfy converte objeto em string
+        console.log(infoEmpresa)
+
+        let pratos = {p1:"massas",p2:"carnes"}
+        console.log(JSON.stringify(pratos)) // p1 e p2 ganham aspas duplas "p1" "p2" - convertento o objeto em string
+    </script>
+</body>
+</html>
