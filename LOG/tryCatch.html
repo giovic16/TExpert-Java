@@ -35,15 +35,15 @@
             if(meses[m] !== undefined){
                 return meses[m]
             }else {
-                throw new controlException("Verificando entrada de dados")
+                throw new controlException("Verificando entrada de dados") // throw - facilita na exibição de mensagens
             }
         }
         let mes = 11
         let nomeMes
 
-        try {
+        try { // try - trecho do código que faz o teste, validando se passa de maneira positiva ou não
             nomeMes = mesAtual(mes)
-        } catch (error) {
+        } catch (error) { // catch - captura e exibe o erro
             nomeMes = "Mês inexistente"
             console.log(error.info, error.msg)
         }
