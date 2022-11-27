@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+<body>
+    
+    <h1>Desafio de lógica 1</h1>
+    <section id="resultado">
+        <p>O resultado vai aparecer aqui...</p>
+    </section>
+    <script>
+        let a1, a2, a3, a4, a5, a6
+        a1 = 3
+        a2 = 4
+        a3 = 2
+        a4 = 2
+        a5 = 1
+        a6 = 5
+        let media = (a1 + a2 + a3 + a4 + a5 + a6)/6
+        let porcentagem = (media/5)*100 // média dividido pelo máximo de pontuação (5) dividido por 100
+        let nomes = ["Pedro","Maria","Juliana","Fernando","Rita","Roque"]
+        let resultado = window.document.getElementById('resultado')
+
+        switch (nomes) {
+            case 1: {
+                nome = "Pedro"
+                break;
+            }
+            case 2: {
+                nome = "Maria"
+                break;
+            } 
+            case 3: {
+                nome = "Juliana"
+                break;
+            } 
+            case 4: {
+                nome = "Fernando"
+                break;
+            } 
+            case 5: {
+                nome = "Rita"
+                break;
+            } 
+            case 6: {
+                nome = "Roque"
+                break;
+            }   
+        }let aleatorio = parseInt(Math.random()*6) + 1
+
+        function statusNomes(notas, n){
+            switch (n) {
+                case 1: {
+                    nome = "Pedro"
+                    break;
+                }
+                case 2: {
+                    nome = "Maria"
+                    break;
+                } 
+                case 3: {
+                    nome = "Juliana"
+                    break;
+                } 
+                case 4: {
+                    nome = "Fernando"
+                    break;
+                } 
+                case 5: {
+                    nome = "Rita"
+                    break;
+                } 
+                case 6: {
+                    nome = "Roque"
+                    break;
+                }     
+            }
+            if(notas <= 3){resultado.innerHTML += `<p>Nome para reforço: ${nome}</p>`}
+            if(notas >= 4){resultado.innerHTML += `<p>Nome para estágio: ${nome}</p>`}
+        }
+
+        resultado.innerHTML = `<p>Média dos alunos: ${media.toFixed(2)}</p>` // .toFixed() - formata um número float
+        resultado.innerHTML += `<p>Taxa de acerto: ${porcentagem.toFixed(2)}%</p>`
+        resultado.innerHTML += `<p>Nome aleatório: ${nomes[aleatorio]}</p>`
+
+        statusNomes(a1, 1)
+        statusNomes(a2, 2)
+        statusNomes(a3, 3)
+        statusNomes(a4, 4)
+        statusNomes(a5, 5)
+        statusNomes(a6, 6)
+
+    </script>
+</body>
+</html>
