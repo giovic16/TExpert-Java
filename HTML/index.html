@@ -23,6 +23,9 @@
         header img {
             width: 80px;
         }
+        select {
+            font-size: 0.80em;
+        }
     </style>
 </head>
 <body>
@@ -115,12 +118,39 @@
                                 <input type="email" name="email" id="email" required> 
                             </li>
                             <li>
+                                <label for="entrada">Escolha sua entrada</label>
+                                <input list="entrada_opt" name="entrada" id="entrada">
+                                <datalist id="entrada_opt">
+                                    <option value="Caldo de mandioquinha"></option>
+                                    <option value="Caprese no palito"></option>
+                                    <option value="Patê de azeitona"></option>
+                                    <option value="Coxinha"></option>
+                                </datalist>
+                            </li>
+                            <li>
                                 <label for="convidados">Convidados</label>
                                 <input type="number" name="convidados" id="convidados" min="1" max="10" value="10" readonly required> 
                             </li>
                             <li>
                                 <label for="aniversariante">Coloque a foto do aniversariante</label>
                                 <input type="file" name="aniversariante" id="aniversariante" accept="image/png"> 
+                            </li>
+                            <li>
+                                <label for="tipo_comida">Cozinha</label>
+                                <select name="cozinha" id="cozinha">
+                                    <option value="...">...</option>
+                                    <!--<option value="brasileira">Brasileira</option>-->
+                                    <optgroup label="Brasileira">
+                                        <option value="feijoada">Feijoada</option>
+                                        <option value="virado">Virado a Paulista</option>
+                                    </optgroup>
+                                    <!--<option value="italiana">Italiana</option>-->>
+                                    <optgroup label="Italiana">
+                                        <option value="lasanha">Lasanha</option>
+                                        <option value="risotto">Risotto</option>
+                                    </optgroup>
+                                    <option value="francesa">Francesa</option>
+                                </select>
                             </li>
                             <li>
                                 <label for="obs">Observação</label> <br>
