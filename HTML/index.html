@@ -101,7 +101,7 @@
             <hr>
             <article id="contato">
                 <h2>Deixe aqui seu recado</h2>
-                <form action="" method="post">
+                <form action="" method="get" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Preencha todos os campos</legend>
                         <ul>
@@ -118,14 +118,30 @@
                                 <input type="number" name="convidados" id="convidados" min="1" max="10" required> 
                             </li>
                             <li>
+                                <label for="aniversariante">Coloque a foto do aniversariante</label>
+                                <input type="file" name="aniversariante" id="aniversariante" accept="image/png"> 
+                            </li>
+                            <li>
                                 <label for="obs">Observação</label> <br>
                                 <textarea name="30" id="obs" cols="30" rows="10" required></textarea>
                             </li>
                             <li>
-                                <button>Confirmar</button>
+                                <input type="image" src="./recursosHTML/images/bolo.jpg" alt="Enviar mensagem" width="100">
+                                <!--<input type="submit" value="Confirmar">-->
+                                <!--<button>Confirmar</button>-->
                             </li>
                         </ul>
                     </fieldset>
+                </form>
+            </article>
+            <hr>
+            <article>
+                <!-- Calcula a quantidade de convidados -->
+                <form oninput="pessoas.value=qtd.value;res.value=`R$ ${parseInt(qtd.value)*50},00`">
+                    <label for="">Calcule a quantidade de convidados</label>
+                    <input type="range" name="qtd" id="qtd" min="1" max="10" value="1">
+                    <input type="number" name="pessoas" id="pessoas" min="1" max="10" value="1">
+                    <output name="res" id="res">R$ 50,00</output>
                 </form>
             </article>
             <hr>
