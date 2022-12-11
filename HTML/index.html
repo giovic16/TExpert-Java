@@ -101,13 +101,14 @@
             <hr>
             <article id="contato">
                 <h2>Deixe aqui seu recado</h2>
+                <!-- action sem valor = vai processar a própia página sem uma url definida-->
                 <form action="" method="get" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Preencha todos os campos</legend>
                         <ul>
                             <li>
                                 <label for="nome">Nome</label>
-                                <input type="text" name="nome" id="nome" required> 
+                                <input type="text" name="nome" id="nome" maxlength="25" autofocus required> 
                             </li>
                             <li>
                                 <label for="email">E-mail</label>
@@ -115,7 +116,7 @@
                             </li>
                             <li>
                                 <label for="convidados">Convidados</label>
-                                <input type="number" name="convidados" id="convidados" min="1" max="10" required> 
+                                <input type="number" name="convidados" id="convidados" min="1" max="10" value="10" readonly required> 
                             </li>
                             <li>
                                 <label for="aniversariante">Coloque a foto do aniversariante</label>
