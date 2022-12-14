@@ -1,3 +1,45 @@
+h2 {
+    color: blue;
+    text-align: center;
+    /* direction: rtl; Texto na esquerda, rtl para alinhar na direita */
+    /* unicode-bidi: bidi-override; Inverte a ordem das letras */
+}
+
+p {
+    text-align: justify;
+    text-indent: 30px; /*Afasta o texto da borda */
+    text-align-last: right; /* A última linha vai para direita*/
+    letter-spacing: 0.08rem; /*Separacao entre as letras*/
+    word-spacing: 0.08rem; /*Separacao entre as palavras*/
+    /* white-space: nowrap; espaco em branco nao tem quebra (com esse comando) */
+    line-height: 1.4rem; /*Afasta linhas*/
+    white-space: wrap;
+}
+
+/*first-letter - altera com a primeira letra do paragrafo*/
+p::first-letter {
+    font-size: 1.8rem;  
+    font-weight: 900;
+}
+
+nav a {
+    /* text-decoration: none; Remove o sublinhado (decoracao do texto) */
+    /* text-decoration: overline; Sublinhado fica acima do texto */
+    /* text-decoration: underline; Sublinhado fica abaixo do texto */
+    /* text-decoration-color: red; Texto fica no centro da img */
+    text-decoration: none; /*Edicao em uma unica linha*/
+}
+
+/*Pseudoclasse hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
+nav a:hover {
+    text-decoration: underline red dotted 3px;
+}
+
+header span {
+    /* text-transform: uppercase; tudo em maiusculas */
+    /* text-transform: lowercase; tudo em minusculas */
+    text-transform: capitalize; /* So as primeiras letras em maiusculas*/
+}
 /* Inicio do style que removi do html e trouxe pro arquivo css*/
 body {
     width: 80%;
