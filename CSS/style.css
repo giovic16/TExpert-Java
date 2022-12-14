@@ -1,0 +1,36 @@
+/* Inicio do style que removi do html e trouxe pro arquivo css*/
+body {
+    width: 80%;
+    margin: auto;
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.3em;
+    border: 1px dashed #ccc;
+    padding: 10px;
+}
+
+figure {
+    padding: 20px;
+}
+
+header nav ul li {
+    font-size: 16px;
+}
+
+header * {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header img {
+    width: 80px;
+    vertical-align: middle; /*Texto fica no centro da img */
+    /* vertical-align: baseline; Texto fica no final da img */
+    /* vertical-align: top; Texto fica no comeco da img */
+}
+
+audio {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+/* Final do style que removi do html e trouxe pro arquivo css*/

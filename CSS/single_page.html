@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosso Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="../HTML/recursosHTML/images/svg/cenoura.svg" alt="cenoura" width="30">
+        <span>Nosso Restaurante</span>
+        <br><br>
+        <img src="../HTML/recursosHTML/images/salmon-1312372.jpg" alt="salmao" style="width: 100%;">
+        <nav>
+            <ul>
+                <li>
+                    <a href="#sobre">Sobre nós</a> |
+                    <a href="#pratos">Pratos</a> |
+                    <a href="#reservas">Reservas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article id="sobre">
+                <h2>Sobre nosso compromisso</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Ad nulla aspernatur quod obcaecati recusandae pariatur molestiae reiciendis blanditiis officia ipsam provident natus eos, 
+                    excepturi totam voluptatibus, dolores omnis at voluptas molestias voluptatum quisquam hic. 
+                    Cupiditate ratione, nihil ullam repellat dignissimos iste animi aliquam quae, voluptatem quisquam, 
+                    veniam nostrum soluta blanditiis!</p> 
+                    <img src="../HTML/recursosHTML/images/here-take-a-look-at-our-menu.jpg" alt="food background" width="50%">
+                    <img src="../HTML/recursosHTML/images/chef-939437_1920.jpg" alt="chef" width="50%">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, suscipit? Molestias beatae asperiores itaque placeat porro voluptatum dolorem, magni officia modi, possimus nobis nisi vel quidem incidunt velit quis deserunt animi maxime dolore repudiandae blanditiis ullam? Quis laborum, impedit magnam eius deleniti ipsam nisi ad ab in, similique error dolorum quasi aspernatur ex. Suscipit odio voluptas quisquam accusantium culpa, omnis maiores praesentium, deserunt deleniti temporibus quam libero cum earum modi dolor nemo rerum in hic provident facilis molestiae expedita ut ea? Ullam aperiam molestiae tempore rerum ut neque unde fugiat modi? Obcaecati cumque dignissimos saepe itaque porro laborum aperiam minus?</p>
+            </article>
+            <hr>
+            <article id="pratos">
+                <h2>Aprecie nossos pratos</h2>
+                <!-- table>tr*2>td*4 - comando para criar estrutura abaixo -->
+                <table>
+                    <tr>
+                        <td width="25%">
+                            <img width="100%" src="../HTML/recursosHTML/images/baked-salmon-garnished-with-asparagus-and-tomatoes-with-herbs.jpg" alt="salmao">
+                        </td>
+                        <td>
+                            <h3>Salmão grelhado</h3>
+                            <p>R$ 80,00</p>
+                            <p>No almoço</p>
+                        </td>
+                        <td width="25%">
+                            <img width="100%" src="../HTML/recursosHTML/images/authentic-italian-pasta.jpg" alt="Spaghetti">
+                        </td>
+                        <td>
+                            <h3>Spaghetti</h3>
+                            <p>R$ 70,00</p>
+                            <p>No almoço</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="25%">
+                            <img width="100%" src="../HTML/recursosHTML/images/frutas-e-vegetais.jpg" alt="frutas-e-vegetais">
+                        </td>
+                        <td>
+                            <h3>Espeto de vegetais</h3>
+                            <p>R$ 65,00</p>
+                            <p>Aos domingos</p>
+                        </td>
+                        <td width="25%">
+                            <img width="100%" src="../HTML/recursosHTML/images/pizza-pepperoni-on-the-table.jpg" alt="pizza">
+                        </td>
+                        <td>
+                            <h3>Pizza</h3>
+                            <p>R$ 54,00</p>
+                            <p>A noite com os amigos</p>
+                        </td>
+                    </tr>
+                </table>
+            </article>
+            <hr>
+            <article id="reservas">
+                <h2>Reserve nosso espaço para o seu aniversário</h2>
+                <form action="" method="get" enctype="multipart/form-data">
+                    <fieldset>
+                        <legend>Preencha todos os campos</legend>
+                        <ul>
+                            <li>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="nome" maxlength="25" placeholder="Insira seu nome" autofocus required> 
+                            </li>
+                            <li>
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="Insira seu email" required> 
+                            </li>
+                            <li>
+                                <label for="entrada">Escolha sua entrada</label>
+                                <input list="entrada_opt" name="entrada" id="entrada">
+                                <datalist id="entrada_opt">
+                                    <option value="Caldo de mandioquinha"></option>
+                                    <option value="Caprese no palito"></option>
+                                    <option value="Patê de azeitona"></option>
+                                    <option value="Coxinha"></option>
+                                </datalist>
+                            </li>
+                            <hr>
+                            <li>
+                                <label for="convidados">Convidados</label>
+                                <input type="number" name="convidados" id="convidados" min="1" max="10" value="10" readonly required> 
+                            </li>
+                            <li>
+                                <label for="aniversariante">Coloque a foto do aniversariante</label>
+                                <input type="file" name="aniversariante" id="aniversariante" accept="image/png"> 
+                            </li>
+                            <li>
+                                <label for="tipo_comida">Cozinha</label>
+                                <select name="cozinha" id="cozinha">
+                                    <option value="...">...</option>
+                                    <!--<option value="brasileira">Brasileira</option>-->
+                                    <optgroup label="Brasileira">
+                                        <option value="feijoada">Feijoada</option>
+                                        <option value="virado">Virado a Paulista</option>
+                                    </optgroup>
+                                    <!--<option value="italiana">Italiana</option>-->>
+                                    <optgroup label="Italiana">
+                                        <option value="lasanha">Lasanha</option>
+                                        <option value="risotto">Risotto</option>
+                                    </optgroup>
+                                    <option value="francesa">Francesa</option>
+                                </select>
+                            </li>
+                            <hr>
+                            <li>
+                                <label for="data_niver">Data do aniversário</label>
+                                <input type="date" name="data_niver" id="data_niver">
+                            </li>
+                            <li>
+                                <label for="cor_festa">Cor do tema</label>
+                                <input type="color" name="cor_festa" id="cor_festa" value="#ff00ff">
+                            </li>
+                            <li>
+                                <label for="servicos">Serviços Adicionais</label> <br> 
+                                <!-- name="servicos" - pois os checkbox são do mesmo grupo-->
+                                    <input style="accent-color: red;" checked type="checkbox" name="servicos" id="musico"> Músico
+                                    <input type="checkbox" name="servicos" id="magico"> Mágico
+                                    <input type="checkbox" name="servicos" id="garcom"> Garçom
+                            </li>
+                            <hr>
+                            <li>
+                                <label for="bolo">Bolo do aniversariante</label> <br>
+                                    <input type="radio" checked name="bolo" id="bolo_proprio"> Bolo próprio
+                                    <input type="radio" name="bolo" id="bolo_nosso"> Bolo do nosso restaurante
+                            </li>
+                            <li>
+                                <label for="obs">Observação</label> <br>
+                                <textarea name="30" id="obs" cols="30" rows="10" required></textarea>
+                            </li>
+                            <li>
+                                <input type="image" src="../HTML/recursosHTML/images/png/btn_bolo.png" alt="Enviar mensagem" width="100">
+                                <!--<input type="submit" value="Confirmar">-->
+                                <!--<button>Confirmar</button>-->
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+            </article>
+            <hr>
+            <article>
+                <!-- Calcula a quantidade de convidados -->
+                <form oninput="pessoas.value=qtd.value;res.value=`R$ ${parseInt(qtd.value)*50},00`">
+                    <label for="">Calcule a quantidade de convidados</label>
+                    <input type="range" name="qtd" id="qtd" min="1" max="10" value="1">
+                    <input type="number" name="pessoas" id="pessoas" min="1" max="10" value="1">
+                    <output name="res" id="res">R$ 50,00</output>
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <table width="100%"">
+            <tr>
+                <td width="50%">
+                    <p>
+                        nossorestaurante1986@email.com
+                    </p>
+                    <p>
+                        +55 11 91234-5678
+                    </p>
+                    <img src="../HTML/recursosHTML/images/facebook.png" alt="facebook" width="45">
+                    <img src="../HTML/recursosHTML/images/instagram.png" alt="instagram" width="45">
+                    <img src="../HTML/recursosHTML/images/linkedin.png" alt="linkedin" width="45">
+                    <img src="../HTML/recursosHTML/images/whatsapp.png" alt="whatsapp" width="45">
+                </td>
+                <td width="50%">
+                    <form action="" method="get">
+                        <fieldset>
+                            <legend>O que podemos te ajudar hoje?</legend>
+                            <ul>
+                                <li>
+                                    <label for="nome_mensagem">Nome:</label>
+                                    <input type="text" name="nome_mensagem" id="nome_mensagem" maxlength="30" placeholder="Insira seu nome" required> 
+                                </li>
+                                <li>
+                                    <label for="email_mensagem">E-mail:</label>
+                                    <input type="email" name="email_mensagem" id="email_mensagem" placeholder="Insira seu e-mail" required> 
+                                </li>
+                                <li>
+                                    <label for="telefone_mensagem">Telefone:</label>
+                                    <input type="number" name="telefone_mensagem" id="telefone_mensagem" placeholder="Insira seu telefone" required> 
+                                </li>
+                                <li>
+                                    <button>Enviar mensagem</button>
+                                </li>
+                            </ul>
+                        </fieldset>
+                    </form>
+                </td>
+                <tr>
+                   <td colspan="2"><p>&copy;2045 - Todos os direitos reservados</p></td> 
+                </tr>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
