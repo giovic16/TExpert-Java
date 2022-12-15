@@ -1,19 +1,44 @@
 /*LOGO*/
 
 div.logo{
-    width: 30vw;
+    width: 35vw;
+    min-width: 350px;
     text-align: center;
     margin-bottom: 12px;
     padding: 0.5rem;
+    background-color: #000;
+    color: #fff;
+    border-radius: 22px 0 22px 0;
 }
 div.logo span{
     font-family: 'Lobster', cursive;
-    font-size: 75%;
+    font-size: 80%;
+    letter-spacing: 0.4rem;
+}
+div.logo>img{
+    width: 14%;
 }
 .lobster {
     font-family: 'Lobster', cursive;
     font-size: 75%;
 }
+
+/*Inicio seletor filho*/
+header > img {
+    filter: invert(100);
+}
+
+header div.slogan {
+    background-color: #000;
+    color: #fff;
+    /* padding: 0 0 12px 0; top right bottom left */
+    padding: 0 0 7px 0;
+}
+
+header div.slogan p {
+    padding: 0 1.5rem 0 0;
+}
+/*Final seletor filho*/
 h2 {
     color: blue;
     text-align: center;
@@ -44,18 +69,6 @@ h2+span{
     color: brown;
 }
 /*Final Adjacente*/
-
-/*Inicio seletor filho*/
-header > img {
-    filter: invert(100);
-}
-
-header div.slogan {
-    background-color: #000;
-    color: #fff;
-    padding: 0 0 12px 0; /*top right bottom left*/
-}
-/*Final seletor filho*/
 
 /*Inicio seletor vizinho*/
 article#pratos p:active ~ table {
