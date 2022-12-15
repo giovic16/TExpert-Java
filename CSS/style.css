@@ -5,6 +5,49 @@ h2 {
     /* unicode-bidi: bidi-override; Inverte a ordem das letras */
 }
 
+/*Inicio Combinacoes*/
+article#pratos p { /*Todos os paragrafos do artigo PRATO fica cinza*/
+    color: #999;
+}
+
+article#pratos table td p { /*Todos os paragrafos dentro da tabela fica de cor preta*/
+    color: #000;
+}
+/*Final Combinacoes*/
+
+/*Inicio Adjacente*/
+/* header span+br+br+img { Linha 13 a 15 para formar o adjacente
+    filter: invert(100);
+} */
+
+h2+span{
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: brown;
+}
+/*Final Adjacente*/
+
+/*Inicio seletor filho*/
+header > img {
+    filter: invert(100);
+}
+
+header div {
+    background-color: #000;
+    color: #fff;
+}
+/*Final seletor filho*/
+
+/*Inicio seletor vizinho*/
+article#pratos p:active ~ table {
+    border: dashed 2px green;
+}
+
+article#pratos p:active {
+    color: red;
+}
+/*Final seletor vizinho*/
+
 p {
     text-align: justify;
     text-indent: 30px; /*Afasta o texto da borda */
@@ -16,8 +59,8 @@ p {
     white-space: wrap;
 }
 
-/*first-letter - altera com a primeira letra do paragrafo*/
-p::first-letter {
+/*Pseudo elemento first-letter - altera com a primeira letra do paragrafo*/
+p::first-letter { 
     font-size: 1.8rem;  
     font-weight: 900;
 }
@@ -30,8 +73,8 @@ nav a {
     text-decoration: none; /*Edicao em uma unica linha*/
 }
 
-/*Pseudoclasse hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
-nav a:hover {
+/*Pseudo classe hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
+nav a:hover { 
     text-decoration: underline red dotted 3px;
 }
 
@@ -44,9 +87,9 @@ header span {
 body {
     width: 80%;
     margin: auto;
-    font-size: 1.3em;
+    font-size: 1.3rem;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    line-height: 1.3em;
+    line-height: 1.3rem;
     border: 1px dashed #ccc;
     padding: 10px;
 }
@@ -60,7 +103,7 @@ header nav ul li {
 }
 
 header * {
-    font-size: 2em;
+    font-size: 2rem;
     font-weight: 700;
 }
 
