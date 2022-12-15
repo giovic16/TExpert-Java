@@ -1,6 +1,23 @@
+/*LOGO*/
+
+div.logo{
+    width: 30vw;
+    text-align: center;
+    margin-bottom: 12px;
+    padding: 0.5rem;
+}
+div.logo span{
+    font-family: 'Lobster', cursive;
+    font-size: 75%;
+}
+.lobster {
+    font-family: 'Lobster', cursive;
+    font-size: 75%;
+}
 h2 {
     color: blue;
     text-align: center;
+    font-family: 'Courier New', Courier, monospace;
     /* direction: rtl; Texto na esquerda, rtl para alinhar na direita */
     /* unicode-bidi: bidi-override; Inverte a ordem das letras */
 }
@@ -8,6 +25,7 @@ h2 {
 /*Inicio Combinacoes*/
 article#pratos p { /*Todos os paragrafos do artigo PRATO fica cinza*/
     color: #999;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 article#pratos table td p { /*Todos os paragrafos dentro da tabela fica de cor preta*/
@@ -32,9 +50,10 @@ header > img {
     filter: invert(100);
 }
 
-header div {
+header div.slogan {
     background-color: #000;
     color: #fff;
+    padding: 0 0 12px 0; /*top right bottom left*/
 }
 /*Final seletor filho*/
 
