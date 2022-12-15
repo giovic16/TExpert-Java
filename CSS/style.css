@@ -48,6 +48,27 @@ article#pratos p:active {
 }
 /*Final seletor vizinho*/
 
+/*Inicio prefixos de browsers*/
+textarea {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+}
+/*Final prefixos de browsers*/
+
+/*Inicio atributos*/
+input[type=radio]{ /*Ao clicar no botao tipo radio, ele fica verde*/
+    accent-color: green;
+}
+
+input[type=checkbox]:checked + span { /*Ao clicar checkbox, a palavra fica azul*/
+    color: blue;
+}
+/*Final atributos*/
+
+
 p {
     text-align: justify;
     text-indent: 30px; /*Afasta o texto da borda */
