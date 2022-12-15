@@ -1,5 +1,4 @@
-/*LOGO*/
-
+/* ###### -> LOGO <- ###### */
 div.logo{
     width: 35vw;
     min-width: 350px;
@@ -14,17 +13,23 @@ div.logo span{
     font-family: 'Lobster', cursive;
     font-size: 80%;
     letter-spacing: 0.4rem;
+    /* text-transform: uppercase; tudo em maiusculas */
+    /* text-transform: lowercase; tudo em minusculas */
+    text-transform: capitalize; /* So as primeiras letras em maiusculas*/
 }
 div.logo>img{
     width: 14%;
+    vertical-align: middle;
 }
-.lobster {
-    font-family: 'Lobster', cursive;
-    font-size: 75%;
+/* ###### Final LOGO ###### */
+
+/* ###### -> HEADER <- ###### */
+header * {
+    font-size: 2rem;
+    font-weight: 700;
 }
 
-/*Inicio seletor filho*/
-header > img {
+header > img { /*Inicio seletor filho*/
     filter: invert(100);
 }
 
@@ -35,10 +40,12 @@ header div.slogan {
     padding: 0 0 7px 0;
 }
 
-header div.slogan p {
+header div.slogan p { /*Final seletor filho*/
     padding: 0 1.5rem 0 0;
 }
-/*Final seletor filho*/
+/* ###### Final HEADER ###### */
+
+/* ###### -> P e H2 <- ###### */
 h2 {
     color: blue;
     text-align: center;
@@ -47,59 +54,16 @@ h2 {
     /* unicode-bidi: bidi-override; Inverte a ordem das letras */
 }
 
-/*Inicio Combinacoes*/
-article#pratos p { /*Todos os paragrafos do artigo PRATO fica cinza*/
-    color: #999;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-article#pratos table td p { /*Todos os paragrafos dentro da tabela fica de cor preta*/
-    color: #000;
-}
-/*Final Combinacoes*/
-
 /*Inicio Adjacente*/
 /* header span+br+br+img { Linha 13 a 15 para formar o adjacente
     filter: invert(100);
 } */
 
-h2+span{
+h2+span{ /*Final Adjacente*/
     font-size: 0.8rem;
     text-transform: uppercase;
     color: brown;
 }
-/*Final Adjacente*/
-
-/*Inicio seletor vizinho*/
-article#pratos p:active ~ table {
-    border: dashed 2px green;
-}
-
-article#pratos p:active {
-    color: red;
-}
-/*Final seletor vizinho*/
-
-/*Inicio prefixos de browsers*/
-textarea {
-    -moz-border-radius: 12px;
-    -webkit-border-radius: 12px;
-    -o-border-radius: 12px;
-    -ms-border-radius: 12px;
-    border-radius: 12px;
-}
-/*Final prefixos de browsers*/
-
-/*Inicio atributos*/
-input[type=radio]{ /*Ao clicar no botao tipo radio, ele fica verde*/
-    accent-color: green;
-}
-
-input[type=checkbox]:checked + span { /*Ao clicar checkbox, a palavra fica azul*/
-    color: blue;
-}
-/*Final atributos*/
-
 
 p {
     text-align: justify;
@@ -112,12 +76,50 @@ p {
     white-space: wrap;
 }
 
-/*Pseudo elemento first-letter - altera com a primeira letra do paragrafo*/
-p::first-letter { 
+p::first-letter { /*Pseudo elemento first-letter - altera com a primeira letra do paragrafo*/
     font-size: 1.8rem;  
     font-weight: 900;
 }
+/* ###### Final p e h2 ###### */
 
+/* ###### -> CLASSES <- ###### */
+.lobster { /*Inicio Combinacoes*/
+    font-family: 'Lobster', cursive;
+    font-size: 75%;
+}
+/* ###### Final CLASSES ###### */
+
+/* ###### -> ARTICLES <- ###### */
+article#pratos p:active ~ table { /*Inicio Seletor Vizinho */
+    border: dashed 2px green;
+}
+
+article#pratos p:active { /*Final Seletor Vizinho*/
+    color: red;
+}
+/* ###### Final ARTICLES ###### */
+
+/* ###### -> FORMS <- ###### */
+textarea { /*Inicio prefixos de browsers*/
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -o-border-radius: 12px;
+    -ms-border-radius: 12px;
+    border-radius: 12px;
+} /*Final prefixos de browsers*/
+
+/*Inicio atributos*/
+input[type=radio]{ /*Ao clicar no botao tipo radio, ele fica verde*/
+    accent-color: green;
+}
+
+input[type=checkbox]:checked + span { /*Ao clicar checkbox, a palavra fica azul*/
+    color: blue;
+}
+/*Final atributos*/
+/* ###### Final FORMS ###### */
+
+/* ###### -> NAVBAR <- ###### */
 nav a {
     /* text-decoration: none; Remove o sublinhado (decoracao do texto) */
     /* text-decoration: overline; Sublinhado fica acima do texto */
@@ -126,16 +128,34 @@ nav a {
     text-decoration: none; /*Edicao em uma unica linha*/
 }
 
-/*Pseudo classe hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
-nav a:hover { 
-    text-decoration: underline red dotted 3px;
+nav {
+    margin: 0 0 120px 0;
 }
 
-header span {
-    /* text-transform: uppercase; tudo em maiusculas */
-    /* text-transform: lowercase; tudo em minusculas */
-    text-transform: capitalize; /* So as primeiras letras em maiusculas*/
+nav ul {
+    margin-top: 10px;
+    /* height: auto; */
+    list-style: none; /* remove o marcador da lista */
+    padding: 0;
+    text-align: left;
 }
+
+nav ul li a {
+    text-decoration: none;
+    margin: 0 0.5vw 0 0;
+    display: inline-block;
+    background-color: rgb(132, 118, 118);
+    padding: 20px 22px 12px 22px;
+    color: #fff;
+}
+
+/*Pseudo classe hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
+nav a:hover { 
+    text-decoration: overline #fff dotted 3px;
+}
+/* ###### Final NAVBAR ###### */
+
+
 /* Inicio do style que removi do html e trouxe pro arquivo css*/
 body {
     width: 80%;
@@ -150,25 +170,18 @@ body {
 figure {
     padding: 20px;
 }
-
+/* 
 header nav ul li {
     font-size: 16px;
-}
+} */
 
-header * {
-    font-size: 2rem;
-    font-weight: 700;
-}
 
-header img {
+/* Final do style que removi do html e trouxe pro arquivo css*/
+
+
+/* header img {
     width: 80px;
     vertical-align: middle; /*Texto fica no centro da img */
     /* vertical-align: baseline; Texto fica no final da img */
-    /* vertical-align: top; Texto fica no comeco da img */
-}
-
-audio {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-/* Final do style que removi do html e trouxe pro arquivo css*/
+    /* vertical-align: top; Texto fica no comeco da img 
+} */
