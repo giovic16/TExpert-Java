@@ -24,6 +24,10 @@ div.logo>img{
 /* ###### Final LOGO ###### */
 
 /* ###### -> HEADER <- ###### */
+/* header {
+    position: relative; /*engloba todas as informacoes dentro do header
+} */
+
 header * {
     font-size: 2rem;
     font-weight: 700;
@@ -103,7 +107,7 @@ article#pratos p:active { /*Final Seletor Vizinho*/
 }
 
 article {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     padding: 40px 0 0 0;
 }
 /* ###### Final ARTICLES ###### */
@@ -193,6 +197,37 @@ div.navUp i {
     color: brown;
     cursor: pointer; /*icone de mao para o cursor*/
 }
+
+div.navPosition {
+    background-color: red;
+    width: 7vw;
+    height: 150px;
+    position: fixed; /*Trava a posicao do elemento mesmo com a rolagem da pagina*/
+    right: 0px; /*Movimento para direita*/
+    top: 40vh; /*Movimento para baixo*/
+    /* lef right bottom top */
+    padding: 0 2vw 0 0;
+    border-radius: 25px 0 0 25px;
+}
+
+div.navPosition ul {
+    padding: 0;
+    list-style: none;
+}
+
+div.navPosition ul li {
+    margin: 0 0 10px 0;
+    text-align: center;
+    padding: 0 0 0 5px;
+}
+
+div.navPosition ul li a {
+    font-size: 0.6em;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
 /* ###### Final NAVBAR ###### */
 
 
