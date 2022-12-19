@@ -140,7 +140,7 @@ nav ul {
     text-align: left;
 }
 
-nav ul li a {
+nav.nav1 ul li a {
     text-decoration: none;
     margin: 0 0.5vw 0 0;
     display: inline-block;
@@ -149,9 +149,27 @@ nav ul li a {
     color: #fff;
 }
 
-/*Pseudo classe hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
-nav a:hover { 
+nav.nav1 a:hover { 
     text-decoration: overline #fff dotted 3px;
+}
+
+nav.nav2 ul li a {
+    text-decoration: underline;
+    margin: 0 0.5vw 0 0;
+    display: inline-block;
+    background-color: #fff;
+    border-radius: 0 0 12px 12px;
+    padding: 20px 22px 12px 22px;
+    color: #999;
+    border: 2px solid red;
+    border-top-width: 0; /*Remove a linha de cima da borda*/
+    border-bottom-color: black; /*Colore de preto a linha abaixo da borda*/
+    border-right-style: dashed; /*Tracejado ao lado direito da borda*/
+    border-top-left-radius: 10px; /*Arredonda o lado esquerdo da borda*/
+}
+/*Pseudo classe hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
+nav.nav2 a:hover { 
+    color: #000;
 }
 /* ###### Final NAVBAR ###### */
 
