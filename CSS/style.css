@@ -48,8 +48,9 @@ header div.slogan p { /*Final seletor filho*/
 /* ###### -> P e H2 <- ###### */
 h2 {
     color: blue;
-    text-align: center;
+    text-align: right;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 0 0 10px 0;
     /* direction: rtl; Texto na esquerda, rtl para alinhar na direita */
     /* unicode-bidi: bidi-override; Inverte a ordem das letras */
 }
@@ -63,6 +64,9 @@ h2+span{ /*Final Adjacente*/
     font-size: 0.8rem;
     text-transform: uppercase;
     color: brown;
+    font-weight: 700;
+    display: block;
+    text-align: right;
 }
 
 p {
@@ -97,6 +101,11 @@ article#pratos p:active ~ table { /*Inicio Seletor Vizinho */
 article#pratos p:active { /*Final Seletor Vizinho*/
     color: red;
 }
+
+article {
+    min-height: 100vh;
+    padding: 40px 0 0 0;
+}
 /* ###### Final ARTICLES ###### */
 
 /* ###### -> FORMS <- ###### */
@@ -117,6 +126,10 @@ input[type=checkbox]:checked + span { /*Ao clicar checkbox, a palavra fica azul*
     color: blue;
 }
 /*Final atributos*/
+
+form#formReserva {
+    margin: 0 0 20px 0;
+}
 /* ###### Final FORMS ###### */
 
 /* ###### -> NAVBAR <- ###### */
@@ -170,6 +183,15 @@ nav.nav2 ul li a {
 /*Pseudo classe hover - no momento em que o cursor estiver sobre o elemento, alguma acao acontece*/
 nav.nav2 a:hover { 
     color: #000;
+}
+
+div.navUp {
+    text-align: right;
+}
+
+div.navUp i {
+    color: brown;
+    cursor: pointer; /*icone de mao para o cursor*/
 }
 /* ###### Final NAVBAR ###### */
 

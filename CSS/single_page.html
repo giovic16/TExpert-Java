@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nosso Restaurante</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -19,7 +20,7 @@
             <img src="../HTML/recursosHTML/images/salmon-1312372.jpg" alt="salmao" style="width: 100%;">
             <p class="lobster">Seu melhor lugar e o seu melhor momento</p>
         </div>
-        <nav class="nav2">
+        <nav class="nav2" id="navBar">
             <ul>
                 <li>
                     <a href="#sobre">Sobre nós</a> 
@@ -33,6 +34,7 @@
         <section>
             <article id="sobre">
                 <h2>Sobre nosso compromisso</h2>
+                <span>Você é o que mais nos importa</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                     Ad nulla aspernatur quod obcaecati recusandae pariatur molestiae reiciendis blanditiis officia ipsam provident natus eos, 
                     excepturi totam voluptatibus, dolores omnis at voluptas molestias voluptatum quisquam hic. 
@@ -41,6 +43,11 @@
                     <img src="../HTML/recursosHTML/images/here-take-a-look-at-our-menu.jpg" alt="food background" width="50%">
                     <img src="../HTML/recursosHTML/images/chef-939437_1920.jpg" alt="chef" width="50%">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, suscipit? Molestias beatae asperiores itaque placeat porro voluptatum dolorem, magni officia modi, possimus nobis nisi vel quidem incidunt velit quis deserunt animi maxime dolore repudiandae blanditiis ullam? Quis laborum, impedit magnam eius deleniti ipsam nisi ad ab in, similique error dolorum quasi aspernatur ex. Suscipit odio voluptas quisquam accusantium culpa, omnis maiores praesentium, deserunt deleniti temporibus quam libero cum earum modi dolor nemo rerum in hic provident facilis molestiae expedita ut ea? Ullam aperiam molestiae tempore rerum ut neque unde fugiat modi? Obcaecati cumque dignissimos saepe itaque porro laborum aperiam minus?</p>
+                    <div class="navUp">
+                        <a href="#navBar">
+                            <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+                        </a>
+                    </div>
             </article>
             <hr>
             <article id="pratos">
@@ -96,12 +103,17 @@
                 <p>
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ratione, veniam mollitia dicta laudantium dolores dolorum officia neque inventore recusandae sapiente explicabo, magni facilis, architecto tempore aspernatur accusamus iste quos.
                 </p>
+                <div class="navUp">
+                    <a href="#navBar">
+                        <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
             </article>
             <hr>
             <article id="reservas">
                 <h2>Reserve nosso espaço para o seu aniversário</h2>
                 <span>Descontos incríveis para você fazer sua festa</span>
-                <form action="" method="get" enctype="multipart/form-data">
+                <form id="formReserva" action="" method="get" enctype="multipart/form-data">
                     <fieldset>
                         <legend>Preencha todos os campos</legend>
                         <ul>
@@ -193,6 +205,11 @@
                     <input type="number" name="pessoas" id="pessoas" min="1" max="10" value="1">
                     <output name="res" id="res">R$ 50,00</output>
                 </form>
+                <div class="navUp">
+                    <a href="#navBar">
+                        <i class="fa fa-arrow-up fa-2x" aria-hidden="true"></i>
+                    </a>
+                </div>
             </article>
         </section>
     </main>
@@ -206,10 +223,10 @@
                     <p>
                         +55 11 91234-5678
                     </p>
-                    <img src="../HTML/recursosHTML/images/facebook.png" alt="facebook" width="45">
-                    <img src="../HTML/recursosHTML/images/instagram.png" alt="instagram" width="45">
-                    <img src="../HTML/recursosHTML/images/linkedin.png" alt="linkedin" width="45">
-                    <img src="../HTML/recursosHTML/images/whatsapp.png" alt="whatsapp" width="45">
+                    <i class="fa fa-facebook fa-2x" aria-hidden="true"></i> <!-- fa-2x para aumentar o tamanho do icon -->
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i> <!-- style="color: aqua;" para colorir o icon-->
+                    <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
                 </td>
                 <td width="50%">
                     <form action="" method="get">
