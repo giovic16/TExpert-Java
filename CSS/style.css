@@ -121,12 +121,29 @@ p::first-letter { /*Pseudo elemento first-letter - altera com a primeira letra d
 .container02 div p {
     text-align: left;
     line-height: normal;
+    word-spacing: normal;
+}
+
+.container02 div:hover p {
+    color: red !important
 }
 
 .container02 div p::first-letter {
     font-size: 1.3rem;
     font-weight: normal;
 }
+/*INICIO - Clareia a img e ao passar o mouse da brilho a ela*/
+.container02 div img{
+    opacity: 0.4;
+    transition: all 0.6s;
+}
+
+.container02 div img:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+/*FINAL - Clareia a img e ao passar o mouse da brilho a ela*/
+
 /* ###### Final CLASSES ###### */
 
 /* ###### -> ARTICLES <- ###### */
