@@ -49,7 +49,15 @@ header div.slogan p { /*Final seletor filho*/
 }
 /* ###### Final HEADER ###### */
 
-/* ###### -> P e H2 <- ###### */
+/* ###### -> Li P e H2 <- ###### */
+ul.listaInfo {
+    list-style-image: url(../HTML/recursosHTML/images/garfo_e_faca.png);
+}
+
+ul.listaInfo li {
+    padding: 0 0 0 10px;
+}
+
 h2 {
     color: blue;
     text-align: right;
@@ -88,7 +96,7 @@ p::first-letter { /*Pseudo elemento first-letter - altera com a primeira letra d
     font-size: 1.8rem;  
     font-weight: 900;
 }
-/* ###### Final p e h2 ###### */
+/* ###### Final Li P e H2 ###### */
 
 /* ###### -> CLASSES <- ###### */
 .lobster { /*Inicio Combinacoes*/
@@ -200,13 +208,13 @@ div.navUp i {
 
 div.navPosition {
     background-color: red;
-    width: 7vw;
+    width: 2vw;
     height: 150px;
     position: fixed; /*Trava a posicao do elemento mesmo com a rolagem da pagina*/
     right: 0px; /*Movimento para direita*/
     top: 40vh; /*Movimento para baixo*/
     /* lef right bottom top */
-    padding: 0 2vw 0 0;
+    padding: 0 2vw 0 1vw;
     border-radius: 25px 0 0 25px;
 }
 
