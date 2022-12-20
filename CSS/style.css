@@ -93,7 +93,7 @@ p {
 }
 
 p::first-letter { /*Pseudo elemento first-letter - altera com a primeira letra do paragrafo*/
-    font-size: 1.8rem;  
+    font-size: 1.3rem;  
     font-weight: 900;
 }
 /* ###### Final Li P e H2 ###### */
@@ -106,7 +106,26 @@ p::first-letter { /*Pseudo elemento first-letter - altera com a primeira letra d
 
 .container01 {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 50% 50%; /*Grade com duas colunas*/
+}
+
+.container02 {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%; /*Grade com quatro colunas*/
+}
+
+.container02 div {
+    padding: 4%;
+}
+
+.container02 div p {
+    text-align: left;
+    line-height: normal;
+}
+
+.container02 div p::first-letter {
+    font-size: 1.3rem;
+    font-weight: normal;
 }
 /* ###### Final CLASSES ###### */
 
