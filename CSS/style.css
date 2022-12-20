@@ -165,6 +165,15 @@ nav ul {
     text-align: left;
 }
 
+nav.nav2 ul {
+    background-color: brown;
+}
+
+nav.nav2 {
+    position: sticky;
+    top: 0;
+}
+
 nav.nav1 ul li a {
     text-decoration: none;
     margin: 0 0.5vw 0 0;
@@ -180,7 +189,7 @@ nav.nav1 a:hover {
 
 nav.nav2 ul li a {
     text-decoration: underline;
-    margin: 0 0.5vw 0 0;
+    margin: 0 0 0 0;
     display: inline-block;
     background-color: #fff;
     border-radius: 0 0 12px 12px;

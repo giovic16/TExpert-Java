@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento Stick</title>
+</head>
+<body>
+    <!-- caixa externa -->
+    <div style="border: solid 2px red;
+                min-width: 20px;
+                position: relative;
+                height: 250px;
+                margin: 30px auto;">
+        <!-- caixa interna -->
+        <div style="border: solid 1px black;
+                    position: relative;
+                    width: 80%;
+                    height: 200px;
+                    margin: 30px auto;"></div>
+        <!-- borda que sublinha o Lorem Ipsum -->
+        <div style="border: solid 2px blue;
+                    width: 40%;
+                    text-align: right;
+                    position: absolute;
+                    background-color: coral; /*caixa interna*/
+                    top: 0; 
+                    color: black;
+                    padding: 0 10px 0 0;">Lorem Ipsum</div>
+                    
+                    <!-- /* top: 0; cima */
+                    /* bottom: 0; baixo */
+                    /* right: 0; direita */
+                    /* left: 0; esqueda */ -->
+    </div>
+</body>
+</html>
