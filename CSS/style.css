@@ -103,6 +103,11 @@ p::first-letter { /*Pseudo elemento first-letter - altera com a primeira letra d
     font-family: 'Lobster', cursive;
     font-size: 75%;
 }
+
+.container01 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
 /* ###### Final CLASSES ###### */
 
 /* ###### -> ARTICLES <- ###### */
