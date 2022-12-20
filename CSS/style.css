@@ -155,9 +155,10 @@ article#pratos p:active { /*Final Seletor Vizinho*/
     color: red;
 }
 
-article {
+article, footer {
     /* min-height: 100vh; */
-    padding: 40px 0 0 0;
+    padding: 40px 1% 0 1%;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 /* ###### Final ARTICLES ###### */
 
@@ -298,6 +299,7 @@ body {
     line-height: 1.3rem;
     border: 1px dashed #ccc;
     padding: 10px;
+    background-image: url(../HTML/recursosHTML/images/bg_500.jpg);
 }
 
 figure {
