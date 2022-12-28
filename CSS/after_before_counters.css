@@ -1,0 +1,44 @@
+/* counter-reset conta a quantidade de li e numera elas*/
+body {
+    counter-reset: count-01 5; /* posso começar a partir do 5, caso queira a partir do 1 basta tirar a numeração*/ 
+}
+
+div#box01 div {
+    counter-reset: count-h2;
+}
+
+h2::before {
+    counter-increment: count-h2;
+    content: counters(count-h2, ". ") "- ";
+}
+
+ul {
+    list-style: none;
+}
+
+li.lista01::before {
+    content: " -> ";
+}
+
+li.lista01::after {
+    content: " <- ";
+}
+
+li.lista02::before {
+    counter-increment: count-01;
+    content: counter(count-01);
+    display: inline-block;
+    width: 1.2rem;
+    height: 1.2rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    border-radius: 50%;
+}
+
+li.lista02 span {
+    padding: 0 0 0 1.5%;
+    color: brown;
+}
