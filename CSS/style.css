@@ -160,6 +160,42 @@ article, footer {
     padding: 40px 1% 0 1%;
     background-color: rgba(255, 255, 255, 0.8);
 }
+
+article#frutosDoMar {
+    background-image: url(../HTML/recursosHTML/images/salmon-1312372.jpg);
+    background-size: contain;
+    /* background-repeat: no-repeat; */
+    position: relative;
+    overflow: hidden;
+}
+
+article#frutosDoMar span {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    font-size: 2rem;
+    color: red;
+    font-family: cursive;
+    /* line-height: 10rem; Tamanho da linha */
+    text-shadow: 2px 1px 3px black; /*Sombreamento nas palavras*/
+    z-index: 2;
+}
+
+article#frutosDoMar img.salmao {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    transform: scale(0.2);
+    animation: salmao 3s forwards;
+    animation-delay: 2s;
+}
+
+article#frutosDoMar img.salmao2 {
+    position: absolute;
+    left: -10%;
+    animation: salmao2 6s infinite;
+    animation-delay: 2s;
+}
 /* ###### Final ARTICLES ###### */
 
 /* ###### -> FORMS <- ###### */
