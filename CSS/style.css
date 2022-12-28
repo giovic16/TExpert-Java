@@ -222,7 +222,7 @@ form#formReserva {
 }
 /* ###### Final FORMS ###### */
 
-/* ###### -> NAVBAR <- ###### */
+/* ###### -> NAVBAR e DIV <- ###### */
 nav a {
     /* text-decoration: none; Remove o sublinhado (decoracao do texto) */
     /* text-decoration: overline; Sublinhado fica acima do texto */
@@ -323,7 +323,35 @@ div.navPosition ul li a {
     text-transform: capitalize;
 }
 
-/* ###### Final NAVBAR ###### */
+div#imgFooter {
+    text-align: center;
+}
+
+/* nth pega a primeira div */
+div#imgFooter div:nth-of-type(1) { 
+    background-image: url(../HTML/recursosHTML/images/coxinha-brasileira.jpg);
+    background-size: cover;
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 3px dashed #fff;
+    box-shadow: 12px 12px 3px red; /*Sombreamento fica abaixo da imagem*/
+}
+
+/* nth pega a segunda div */
+div#imgFooter div:nth-of-type(2) {
+    background-image: url(../HTML/recursosHTML/images/frutas-e-vegetais.jpg);
+    background-size: cover;
+    /* background-position: -100px 0; */
+    width: 30vh;
+    height: 30vh;
+    border-radius: 50%;
+    border: 3px dashed #fff;
+    box-shadow: -12px -12px 3px red; /*Sombreamento fica em cima da imagem*/
+}
+
+
+/* ###### Final NAVBAR e DIV ###### */
 
 
 /* Inicio do style que removi do html e trouxe pro arquivo css*/
