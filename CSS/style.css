@@ -323,36 +323,73 @@ div.navPosition ul li a {
     text-transform: capitalize;
 }
 
-div#imgFooter {
+div#imgFooter div span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
+    padding: 10px 0;
 }
 
-/* nth pega a primeira div */
-div#imgFooter div:nth-of-type(1) { 
-    background-image: url(../HTML/recursosHTML/images/coxinha-brasileira.jpg);
+div#imgFooter div {
+    text-align: center;
     background-size: cover;
     width: 30vh;
     height: 30vh;
     border-radius: 50%;
     border: 3px dashed #fff;
+    margin: 80px auto;
+    position: relative;
+}
+
+/* nth pega a primeira div */
+div#imgFooter div:nth-of-type(1) { 
+    background-image: url(../HTML/recursosHTML/images/coxinha-brasileira.jpg);
     box-shadow: 12px 12px 3px red; /*Sombreamento fica abaixo da imagem*/
 }
 
 /* nth pega a segunda div */
 div#imgFooter div:nth-of-type(2) {
     background-image: url(../HTML/recursosHTML/images/frutas-e-vegetais.jpg);
-    background-size: cover;
-    /* background-position: -100px 0; */
-    width: 30vh;
-    height: 30vh;
-    border-radius: 50%;
-    border: 3px dashed #fff;
     box-shadow: -12px -12px 3px red; /*Sombreamento fica em cima da imagem*/
 }
 
 
 /* ###### Final NAVBAR e DIV ###### */
 
+/* ###### Final TABLE ###### */
+
+table {
+    border: 1px solid #000;
+    width: 90%;
+    margin: 80px auto;
+    border-collapse: collapse;
+    border-bottom-width: 4px;
+}
+
+table th {
+    text-align: left;
+}
+
+table td, table th {
+    border: 1px solid #000;
+    padding: 1%;
+}
+
+/*linhas pares da tabela ficam coloridas */
+table tr:nth-child(even) {
+    background-color: #ccc;
+    font-weight: bold;
+}
+
+/*Primeira linha da tabela com uma cor diferente*/
+table tr:nth-of-type(2){
+    background-color: red;
+    color: #fff;
+}
+/* ###### Final TABLE ###### */
 
 /* Inicio do style que removi do html e trouxe pro arquivo css*/
 body {
