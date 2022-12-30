@@ -1,0 +1,26 @@
+:root {
+    --m1: 0 auto;
+    --corPadrao: aqua;
+}
+div#banner {
+    background-color: bisque;
+    text-align: center;
+    padding: 10px 0;
+    position: absolute;
+    top: 40%;
+    left: 50px;
+    width: calc(100% - 100px);
+}
+
+h1 { 
+    font-size: calc(1.5rem + 2vw);
+}
+
+div#banner_02 {
+    background-color: var(--corPadrao);
+    text-align: center;
+    padding: 10px 0;
+    /* width: max(50%, 300px); */
+    width: min(50%, 300px);
+    margin: var(--m1);
+}
