@@ -1,0 +1,15 @@
+div.box01 {
+    -webkit-mask-image: url(../HTML/recursosHTML/images/png/maca-verde.png);
+    mask-image: url(../HTML/recursosHTML/images/png/maca-verde.png);
+    -webkit-mask-repeat: repeat;
+    mask-repeat: repeat;
+    -webkit-mask-position: center;
+    mask-position: center;
+    -webkit-mask-size: 40%;
+    mask-size: 40%;
+    width: 30%;
+}
+
+div.box01 img {
+    width: 100%;
+}
