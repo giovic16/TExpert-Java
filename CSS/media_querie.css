@@ -155,3 +155,21 @@ footer div {
         color: #8f7358;
     }
 }
+
+/* 
+-> media pensada para smartphone - retratro
+@media (max-width: 415px) and (orientation: portrait) { ... }  
+-> media pensada para smartphone - paisagem
+@media (max-width: 915px) and (orientation: landscape) { ... } 
+
+-> media pensada para smartphone e tablets - retratro
+@media (max-width: 415px) and (orientation: portrait), 
+       (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait)  { ... }
+       
+-> media pensada para tablets - retrato
+@media (max-width: 1025px) and (min-height: 1023px) and (orientation: portrait)
+
+-> media pensada para tablets - paisagem
+@media (max-width: 1195px) and (orientation: landscape),
+       (max-width: 1367px) and (min-height: 1023px) and (orientation: landscape)  { ... } 
+*/
