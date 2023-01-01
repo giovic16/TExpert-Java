@@ -1,0 +1,24 @@
+.imgPartes01, .imgPartes02{
+    border: 1px solid black;
+    width: 300px;
+    height: 200px;
+    background-image: url(../HTML/recursosHTML/images/novepratos.jpg);
+    background-size: 300%;
+}
+
+.imgPartes01 {
+    background-position: -580px -20px;
+}
+
+.imgPartes02 {
+    background-position: -290px -190px;
+}
+
+.imgModelo {
+    width: 50%;
+    margin: 20px;
+}
+
+.imgModelo img {
+    width: 100%;
+}
