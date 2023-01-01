@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Float e Paginação</title>
+    <title>Float, Paginação e DropDown</title>
 </head>
 <body>
+    <!-- Float -->
     <div>
         <img src="../HTML/recursosHTML/images/baked-salmon-garnished-with-asparagus-and-tomatoes-with-herbs.jpg"
         style="float:left;
@@ -39,6 +40,8 @@
     <hr>
     <br>
     <br>
+    <br>
+    <br>
     <!-- Paginação -->
     <style>
         .pag a {
@@ -66,5 +69,59 @@
         <a href="#" class="active">6</a>
         <a href="#">&raquo;</a>
     </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- DropDown -->
+    <style>
+        .drop-bt {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 14px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .drop-bt:hover + div, .drop-content:hover {
+            display: block;
+        }
+
+        .drop {
+            position: relative;
+            display: inline-block;
+            margin: 50px 0;
+            min-width: 160px;
+        }
+
+        .drop-content {
+            display: none;
+            position: absolute;
+            min-width: 160px;
+            box-shadow: 8px 16px 0 rgba(0, 0, 0, 0.2);
+            background-color: #f9f9f9;
+        }
+
+        .drop-content a {
+            display: block;
+            background-color: #eee;
+            text-decoration: none;
+        }
+
+        .drop-content a:hover {
+            background-color: red;
+        }
+    </style>
+    <div class="drop">
+        <button class="drop-bt">Menu DropDown</button>
+        <div class="drop-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <div style="clear: both; margin: 50px 0;"></div>
 </body>
 </html>
