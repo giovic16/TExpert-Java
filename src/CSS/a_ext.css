@@ -1,0 +1,44 @@
+.alerta, .erro, .erroGrave {
+  color: #991010;
+  font-size: 1.5rem;
+}
+
+.erro, .erroGrave {
+  background-color: #f28383;
+}
+
+.erroGrave {
+  border-top: #991010 2px solid;
+  border-bottom: #991010 2px solid;
+}
+
+a, .link {
+  color: #2bc8eb;
+  text-decoration: none;
+}
+a:hover, .link:hover {
+  text-decoration: underline;
+}
+
+.link {
+  font-size: small;
+}
+
+.btn-reset {
+  background-color: #e5f8fd;
+}
+
+.btn-reset, .btn-active {
+  box-sizing: border-box;
+  border: 1px rgba(0, 0, 0, 0.12) solid;
+}
+
+.btn-active {
+  color: #2bc8eb;
+}
+
+.btn-reset {
+  color: #eee;
+}
+
+/*# sourceMappingURL=a_ext.css.map */
