@@ -1,0 +1,18 @@
+$cor1: red;
+$cor2: orange;
+$cor3: brown;
+$bg1: #eee;
+
+body {
+    background-color: $bg1;
+}
+
+p {
+    color: $cor3;
+}
+
+ul {
+    li {
+        color: $cor1;
+    }
+}
