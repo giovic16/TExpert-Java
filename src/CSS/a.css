@@ -18,6 +18,34 @@ nav ul li {
   margin-right: 1rem;
 }
 
+.icone-facebook {
+  background-image: url(/HTML/recursosHTML/images/img.png);
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.icone-instagram {
+  background-image: url(/HTML/recursosHTML/images/img.png);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.boxAnima {
+  animation-name: anima-uahxl0z;
+  animation-duration: 2s;
+  animation-iteration-count: forwards;
+}
+@keyframes anima-uahxl0z {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
 .alert {
   color: #3a3636;
   border-color: #b6b6b6;

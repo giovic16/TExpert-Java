@@ -36,6 +36,40 @@ nav ul {
     @include lista_horizontal;
 }
 
+@mixin icone-position($img, $top-bottom, $left-right) {
+    .icone-#{$img} {
+        background-image: url(/HTML/recursosHTML/images/#{img}.png);
+        position: absolute;
+        #{$top-bottom}: 0;
+        #{$left-right}: 0;
+    }
+}
+
+@include icone-position("facebook", top, right);
+@include icone-position("instagram", bottom, right);
+
+
+@mixin anima($dur, $count) {
+    $nome: anima-#{unique-id()};
+    @keyframes #{$nome} {
+        @content
+    }
+    animation-name: $nome;
+    animation-duration: $dur;
+    animation-iteration-count: $count;
+}
+
+.boxAnima {
+    @include anima(2s, forwards) {
+        0% {
+            transform: scale(1);
+        }
+        100% {
+            transform: scale(1.5);
+        }
+    }
+}
+
 $temaAlerta:(
     "sucesso":#54a021,
     "info": #5050f5,
