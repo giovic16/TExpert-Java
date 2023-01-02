@@ -1,0 +1,27 @@
+@use 'variaveis' as v;
+@use 'mixins' as mx;
+
+
+* {
+    font-family: v.$fonte;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    @include mx.box;
+}
+
+.header-heightMiddle {
+    height: 300px;
+    border: 1px solid black;
+}
+
+.logo__slogan {
+    font-size: 3rem;
+}
+
+.container {
+    @include mx.flex-center;
+}

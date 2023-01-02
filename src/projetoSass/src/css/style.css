@@ -1,0 +1,30 @@
+* {
+  font-family: "Ropa Sans";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem, 0;
+  width: 90%;
+  position: relative;
+}
+
+.header-heightMiddle {
+  height: 300px;
+  border: 1px solid black;
+}
+
+.logo__slogan {
+  font-size: 3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*# sourceMappingURL=style.css.map */
