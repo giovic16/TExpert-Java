@@ -3,6 +3,21 @@ section {
   padding: 0;
 }
 
+h4 {
+  color: #fcb32b;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 1rem;
+}
+
 .alert {
   color: #3a3636;
   border-color: #b6b6b6;

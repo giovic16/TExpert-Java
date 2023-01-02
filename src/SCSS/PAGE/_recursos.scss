@@ -8,6 +8,34 @@ $temaEscuro: true !default;
 $corPrimaria: #d3cfcf;
 $corBordaPrimaria: #6a6969;
 
+@mixin cor-01 {
+    color: #fcb32b;
+}
+
+h4 {
+    @include cor-01;
+}
+
+@mixin lista_horizontal {
+    @include lista-reset;
+
+    li {
+        display: inline-block;
+        margin-left: 0; 
+        margin-right: 1rem;
+    }
+}
+
+@mixin lista-reset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+nav ul {
+    @include lista_horizontal;
+}
+
 $temaAlerta:(
     "sucesso":#54a021,
     "info": #5050f5,
