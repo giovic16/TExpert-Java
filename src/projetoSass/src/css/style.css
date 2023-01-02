@@ -5,6 +5,114 @@
   box-sizing: border-box;
 }
 
+#card1 {
+  background-image: url(/src/projetoSass/images/produtos/beef-g66eb2a540_1920.jpg);
+  background-size: cover;
+}
+#card1 h2::before {
+  content: "Carne Grelhada";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card2 {
+  background-image: url(/src/projetoSass/images/produtos/breakfast-ga9b591474_1920.jpg);
+  background-size: cover;
+}
+#card2 h2::before {
+  content: "Bacon com Ovos";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card3 {
+  background-image: url(/src/projetoSass/images/produtos/noodles-7390775_1920.jpg);
+  background-size: cover;
+}
+#card3 h2::before {
+  content: "Penne a Bolonhesa";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card4 {
+  background-image: url(/src/projetoSass/images/produtos/potato-soup-2152265_1920.jpg);
+  background-size: cover;
+}
+#card4 h2::before {
+  content: "Sopa de Batatas";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card5 {
+  background-image: url(/src/projetoSass/images/produtos/rice-noodles-855077_1920.jpg);
+  background-size: cover;
+}
+#card5 h2::before {
+  content: "Sopa de Arroz";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card6 {
+  background-image: url(/src/projetoSass/images/produtos/salad-gf22844a91_1920.jpg);
+  background-size: cover;
+}
+#card6 h2::before {
+  content: "Salada Mix";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card7 {
+  background-image: url(/src/projetoSass/images/produtos/spare-ribs-7410906_1920.jpg);
+  background-size: cover;
+}
+#card7 h2::before {
+  content: "Costela Ribs";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card8 {
+  background-image: url(/src/projetoSass/images/produtos/sushi-354628_1920.jpg);
+  background-size: cover;
+}
+#card8 h2::before {
+  content: "Sushi";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
+#card9 {
+  background-image: url(/src/projetoSass/images/produtos/taco-4709325_1920.jpg);
+  background-size: cover;
+}
+#card9 h2::before {
+  content: "Taco";
+  display: block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  padding: 1rem 0.5rem;
+}
+
 .navbar__nav, .socialMedia__icones {
   list-style: none;
 }
@@ -28,6 +136,25 @@ header {
 .logo__slogan {
   font-size: 3rem;
   text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.servicos {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem, 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.servicos__card {
+  width: 31%;
+  margin-bottom: 1rem;
+  height: 400px;
+  box-shadow: 8px 8px 10px rgba(153, 153, 153, 0.6);
 }
 
 .m-1 {

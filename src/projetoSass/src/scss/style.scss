@@ -21,6 +21,21 @@ header {
     text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
 }
 
+.servicos {
+    @include mx.box;
+    @include mx.flex-center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicos__card {
+    width: 31%;
+    // margin-right: 0.6rem;
+    margin-bottom: v.$m1;
+    height: 400px;
+    box-shadow: 8px 8px 10px #9999;
+}
+
 .m-1 {
     margin: v.$m1;
 }
