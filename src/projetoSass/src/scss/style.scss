@@ -11,6 +11,9 @@
 
 header {
     @include mx.box;
+    background-image: url(v.$bgHome);
+    background-size: 100%;
+    background-position-y: -300px;
 }
 
 .header-heightMiddle {
@@ -20,6 +23,45 @@ header {
 
 .logo__slogan {
     font-size: 3rem;
+    text-shadow: 2px 2px 1px rgba(1, 1, 8, 0.6);
+}
+
+.m-1 {
+    margin: v.$m1;
+}
+
+.mx1 {
+    margin: v.$mx1;
+}
+
+.p-1 {
+    padding: v.$p1;
+}
+
+.navbar {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: v.$bgColorNav;
+}
+
+.navbar__nav, .socialMedia__icones {
+    list-style: none
+}
+
+.navbar__link {
+    color: v.$link-1;
+    text-transform: uppercase;
+    font-size: 1rem;
+    text-decoration: none;
+
+    &:hover {
+        color: v.$linkHover;
+    }
+}
+
+.text-white {
+    color: v.$linkHover;
 }
 
 .container {
