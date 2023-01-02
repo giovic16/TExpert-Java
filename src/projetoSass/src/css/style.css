@@ -5,13 +5,17 @@
   box-sizing: border-box;
 }
 
+.navbar__nav, .socialMedia__icones {
+  list-style: none;
+}
+
 header {
   min-width: 1170px;
   margin: 0 auto;
   padding: 1.5rem, 0;
   width: 90%;
   position: relative;
-  background-image: url("/src/projetoSass/images/backgrounds/background_home_2.jpg");
+  background-image: url("/src/projetoSass/images/backgrounds/background_home.jpg");
   background-size: 100%;
   background-position-y: -300px;
 }
@@ -44,11 +48,6 @@ header {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
-
-.navbar__nav, .socialMedia__icones {
-  list-style: none;
-}
-
 .navbar__link {
   color: #f1f806;
   text-transform: uppercase;
@@ -66,6 +65,25 @@ header {
 .container {
   display: flex;
   justify-content: space-evenly;
+}
+
+@media (max-width: 1170px) {
+  .header, .navbar__nav {
+    flex-flow: column;
+    min-width: 100%;
+  }
+  .navbar {
+    z-index: 1;
+  }
+  .socialMedia {
+    z-index: 2;
+  }
+  .socialMedia__icones {
+    flex-flow: column;
+  }
+  .socialMedia__item {
+    margin: 1rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

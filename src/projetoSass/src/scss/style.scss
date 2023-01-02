@@ -1,17 +1,12 @@
 @use 'variaveis' as v;
 @use 'mixins' as mx;
+@use 'extends' as ex;
 
-
-* {
-    font-family: v.$fonte;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
 
 header {
     @include mx.box;
-    background-image: url(v.$bgHome);
+    background-image: url(mx.bgImage(v.$bgHome_1));
+    // background-image: url(v.$bgHome);
     background-size: 100%;
     background-position-y: -300px;
 }
@@ -43,21 +38,25 @@ header {
     bottom: 0;
     width: 100%;
     background-color: v.$bgColorNav;
-}
 
-.navbar__nav, .socialMedia__icones {
-    list-style: none
-}
-
-.navbar__link {
-    color: v.$link-1;
-    text-transform: uppercase;
-    font-size: 1rem;
-    text-decoration: none;
-
-    &:hover {
-        color: v.$linkHover;
+    &__nav {
+        @extend %list-none;
     }
+    
+    &__link {
+        color: v.$link-1;
+        text-transform: uppercase;
+        font-size: 1rem;
+        text-decoration: none;
+    
+        &:hover {
+            color: v.$linkHover;
+        }
+    }
+}
+
+.socialMedia__icones {
+    @extend %list-none;
 }
 
 .text-white {
@@ -66,4 +65,27 @@ header {
 
 .container {
     @include mx.flex-center;
+}
+
+@media (max-width: 1170px) {
+    .header, .navbar__nav {
+        flex-flow: column;
+        min-width: 100%;
+    } 
+
+    .navbar {
+        z-index: 1;
+    }
+
+    .socialMedia {
+        z-index: 2;
+
+        &__icones {
+            flex-flow: column;
+        }
+    
+        &__item {
+            margin: v.$m1;
+        }
+    }
 }
