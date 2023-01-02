@@ -34,11 +34,11 @@ nav ul li {
 }
 
 .boxAnima {
-  animation-name: anima-uahxl2w;
+  animation-name: anima-uahxl6s;
   animation-duration: 2s;
   animation-iteration-count: forwards;
 }
-@keyframes anima-uahxl2w {
+@keyframes anima-uahxl6s {
   0% {
     transform: scale(1);
   }
@@ -63,9 +63,26 @@ div ˜ ul {
   list-style: none;
 }
 
+.destaque {
+  background-color: #54a021;
+  text-align: center;
+}
+.destaque--urgente {
+  border: 4px solid orange;
+}
+
 .alert {
   color: #3a3636;
   border-color: #b6b6b6;
+}
+.alert p {
+  font-weight: bold;
+}
+
+.box-w {
+  width: 200px;
+  min-width: 30px;
+  min-width: 120px;
 }
 
 .button {

@@ -94,6 +94,14 @@ div ˜ {
     }
 }
 
+.destaque {
+    background-color: #54a021;
+    text-align: center;
+    &--urgente {
+        border: 4px solid orange;
+    }
+}
+
 $temaAlerta:(
     "sucesso":#54a021,
     "info": #5050f5,
@@ -108,6 +116,27 @@ $temaAlerta:(
 .alert {
     color: $corPrimaria;
     border-color: $corBordaPrimaria;
+    & p {
+        font: {
+            weight: bold;
+        }
+    }
+}
+
+$largura: 50px, 30px, 120px;
+
+@function soma($numeros...) {
+    $n: 0;
+    @each $num in $numeros {
+        $n: $n + $num;
+    }
+    @return $n;
+}
+
+.box-w {
+    width: soma(50px, 30px, 120px);
+    min-width: min($largura...);
+    min-width: max($largura...);
 }
 
 .button {
