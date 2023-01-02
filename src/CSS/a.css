@@ -3,12 +3,14 @@ section {
   padding: 0;
 }
 
+/* BODY STYLE */
 body {
   background-color: #eee;
 }
 
 p {
   color: brown;
+  margin: 50%;
 }
 
 ul li {

@@ -1,16 +1,20 @@
-@use "b.scss";
+@use "b" as v;
+// @import "b";
 
 $cor1: red;
 $cor2: orange;
 $cor3: brown;
 $bg1: #eee;
 
+
+/* BODY STYLE */
 body {
     background-color: $bg1;
 }
 
 p {
     color: $cor3;
+    margin: v.$m2;
 }
 
 ul {
