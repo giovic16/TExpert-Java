@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../SCSS/_b.scss","../SCSS/a.scss"],"names":[],"mappings":"AAKA;EACI,QALC;EAMD,SAJE;;;ACMN;AACA;EACI,kBALE;;;AAQN;EACI,OAVG;EAWH,QDfC;;;ACmBD;EACI,OAlBD","file":"a.css"}
+{"version":3,"sourceRoot":"","sources":["../SCSS/_b.scss","../SCSS/PAGE/_recursos.scss","../SCSS/a.scss"],"names":[],"mappings":"AAKA;EACI,QALC;EAMD,SAJE;;;ACCN;EACI,OCFQ;EDGR,eCFc;EDGd,YALW;;;ACWf;AACA;EAEI,kBAPG;;;AAUP;EACI,OAXG;EAYH,QFpBC;;;AEwBD;EACI,OAnBD","file":"a.css"}

@@ -1,5 +1,9 @@
 @use "b" as v;
 // @import "b";
+@use "PAGE/recursos" with (
+    $black: #999,
+    $bordaPadrao: 1rem
+);
 
 $cor1: red;
 $cor2: orange;
@@ -9,6 +13,7 @@ $bg1: #eee;
 
 /* BODY STYLE */
 body {
+    $bg1: $cor3 !global;
     background-color: $bg1;
 }
 

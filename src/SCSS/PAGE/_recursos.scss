@@ -1,0 +1,9 @@
+$black: #000 !default;
+$bordaPadrao: 12px !default;
+$sombraPadrao: 1rem 0.75rem 1rem rgba($black, 0.3) !default;
+
+.box {
+    color: $black;
+    border-radius: $bordaPadrao;
+    box-shadow: $sombraPadrao;
+}
