@@ -1,3 +1,4 @@
+@charset "UTF-8";
 section {
   margin: 50%;
   padding: 0;
@@ -33,17 +34,33 @@ nav ul li {
 }
 
 .boxAnima {
-  animation-name: anima-uahxl0z;
+  animation-name: anima-uahxl2w;
   animation-duration: 2s;
   animation-iteration-count: forwards;
 }
-@keyframes anima-uahxl0z {
+@keyframes anima-uahxl2w {
   0% {
     transform: scale(1);
   }
   100% {
     transform: scale(1.5);
   }
+}
+
+.boxAnima, .alert {
+  border: solid #eee 1px;
+}
+.boxAnima p, .boxAnima a, .alert p, .alert a {
+  background-color: khaki;
+}
+
+h2 + span {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+div ˜ ul {
+  list-style: none;
 }
 
 .alert {

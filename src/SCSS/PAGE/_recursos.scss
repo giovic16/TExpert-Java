@@ -70,6 +70,30 @@ nav ul {
     }
 }
 
+.boxAnima, .alert {
+    border: solid #eee 1px;
+    p, a {
+        background: {
+            color: khaki;
+        }
+    }
+}
+
+h2 + {
+    span {
+        font: {
+            weight: bold;
+            size: 2rem;
+        }
+    }
+}
+
+div ˜ {
+    ul {
+        list-style: none;
+    }
+}
+
 $temaAlerta:(
     "sucesso":#54a021,
     "info": #5050f5,
