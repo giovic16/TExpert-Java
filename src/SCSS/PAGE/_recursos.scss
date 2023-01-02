@@ -1,3 +1,5 @@
+@use "sass:map";
+
 $black: #000 !default;
 $bordaPadrao: 12px !default;
 $sombraPadrao: 1rem 0.75rem 1rem rgba($black, 0.3) !default;
@@ -5,6 +7,12 @@ $sombraPadrao: 1rem 0.75rem 1rem rgba($black, 0.3) !default;
 $temaEscuro: true !default;
 $corPrimaria: #d3cfcf;
 $corBordaPrimaria: #6a6969;
+
+$temaAlerta:(
+    "sucesso":#54a021,
+    "info": #5050f5,
+    "alerta": #fcb32b,
+);
 
 @if(temaEscuro) {
     $corPrimaria: darken($corPrimaria, 60%);
@@ -14,6 +22,10 @@ $corBordaPrimaria: #6a6969;
 .alert {
     color: $corPrimaria;
     border-color: $corBordaPrimaria;
+}
+
+.button {
+    background-color: map.get($temaAlerta, "alerta");
 }
 
 .box {

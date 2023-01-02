@@ -8,6 +8,10 @@ section {
   border-color: #b6b6b6;
 }
 
+.button {
+  background-color: #fcb32b;
+}
+
 .box {
   color: #999;
   border-radius: 1rem;
