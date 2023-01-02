@@ -3,6 +3,11 @@ section {
   padding: 0;
 }
 
+.alert {
+  color: #3a3636;
+  border-color: #b6b6b6;
+}
+
 .box {
   color: #999;
   border-radius: 1rem;

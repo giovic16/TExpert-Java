@@ -2,6 +2,20 @@ $black: #000 !default;
 $bordaPadrao: 12px !default;
 $sombraPadrao: 1rem 0.75rem 1rem rgba($black, 0.3) !default;
 
+$temaEscuro: true !default;
+$corPrimaria: #d3cfcf;
+$corBordaPrimaria: #6a6969;
+
+@if(temaEscuro) {
+    $corPrimaria: darken($corPrimaria, 60%);
+    $corBordaPrimaria: lighten($corBordaPrimaria, 30%)
+}
+
+.alert {
+    color: $corPrimaria;
+    border-color: $corBordaPrimaria;
+}
+
 .box {
     color: $black;
     border-radius: $bordaPadrao;
