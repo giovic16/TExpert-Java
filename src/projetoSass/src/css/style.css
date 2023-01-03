@@ -113,7 +113,7 @@
   padding: 1rem 0.5rem;
 }
 
-.navbar__nav, .socialMedia__icones {
+.navbar__nav, .socialMedia__icones, .footer__navbar__nav, .footer__socialMedia__icones {
   list-style: none;
 }
 
@@ -194,8 +194,41 @@ header {
   justify-content: space-evenly;
 }
 
+.footer {
+  min-width: 1170px;
+  margin: 0 auto;
+  padding: 1.5rem, 0;
+  width: 90%;
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(152, 88, 64, 0.5);
+}
+.footer__navbar {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(1, 1, 8, 0.6);
+}
+.footer__navbar__link {
+  text-decoration: none;
+  color: #fff;
+}
+.footer__navbar__nav {
+  flex-flow: column;
+}
+.footer__socialMedia__icones {
+  flex-flow: column;
+}
+.footer__socialMedia__item {
+  margin-bottom: 1rem;
+}
+.footer .logo__slogan, .footer .contato__info {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 @media (max-width: 1170px) {
-  .header, .navbar__nav {
+  .header, .navbar__nav, .servicos, .servicos__card {
     flex-flow: column;
     min-width: 100%;
   }
@@ -210,6 +243,18 @@ header {
   }
   .socialMedia__item {
     margin: 1rem;
+  }
+  .footer {
+    flex-flow: column;
+    min-width: 100%;
+  }
+  .footer__navbar {
+    justify-content: flex-start;
+    margin-bottom: 1rem;
+  }
+  .footer__socialMedia__icones {
+    flex-flow: row;
+    margin-bottom: 1rem;
   }
 }
 
