@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./js/falsy_truthy.js"></script>
+</head>
+<body>
+    <script>
+        var a = 8
+        function teste() {
+            var a = 5
+            console.log(a)
+        }
+        teste()
+        console.log(a)
+        ///////////////////
+        console.log('####')
+        ///////////////////
+        let b = 2
+        function teste2() {
+            let b = 3
+            console.log(b)
+            // let b = 5 está linha dará erro pois variávei com LET não são mutáveis (exceto em arrays) 
+        }
+        teste2()
+        console.log(b)
+    </script>
+</body>
+</html>
