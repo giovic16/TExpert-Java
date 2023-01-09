@@ -78,6 +78,7 @@ Object.keys(carrinho).forEach((key, i)=>{
 //     console.log(e.target)  // no console aparece as interações realizadas na tela
 //     console.log(e) // retorna eventos no console
 // })
+
 // Alternativa 3
 var inputNumber = document.querySelector('.item-carrinho-0 .input-item-qtd')
 
@@ -86,6 +87,13 @@ inputNumber.onchange = function() {
     document.querySelector('.item-total span').innerText=`R$ ${total.toFixed(2)}`
     console.log(this)  // no console aparece as interações realizadas na tela
 }
+
+// Criando elementos HTML
+let p = document.createElement('p')
+p.style = "color:brown"
+p.setAttribute('class','w-100')
+p.innerText = 'Nossos alimentos passam por uma rigorosa análise de qualidade.'
+document.querySelector("#mensagem").appendChild(p)
 
 // Alternativa 4
 // var inputNumber = document.querySelector('.input-item-qtd')
