@@ -13,6 +13,21 @@ let carrinho = {
         imagem.setAttribute('class','w-75')
         imagem.alt = nome
         obj.appendChild(imagem)
+    },
+    'criaInputNumber':function(obj, key, i){
+        let inputNumber = document.createElement('input')
+        inputNumber.type = 'number'
+        inputNumber.setAttribute('class', 'w-50 border-0 bg-light')
+        inputNumber.min = '0'
+        inputNumber.max = '10'
+        inputNumber.value = '1'
+        obj.appendChild(inputNumber)
+
+        inputNumber.onchange = function() {
+            let total = carrinho[key].preco * this.value 
+            document.querySelector(`.item-carrinho-${i} .item-total`).innerText=`R$ ${total.toFixed(2)}`
+            console.log(this)  // no console aparece as interações realizadas na tela
+        }
     }
 }
 
@@ -42,6 +57,7 @@ Object.keys(carrinho).forEach((key, i)=>{
             var item = document.createElement('div')
             item.setAttribute('class',`col item-${otherkey}`)
             ii === 0 ? carrinho['criaImagem'](`./images/produtos/${carrinho[key].imagem}`, carrinho[key].nome,item) :
+            ii === 3 ? carrinho['criaInputNumber'](item, key, i) :
             item.innerText = carrinho[key][otherkey]
             divItem.appendChild(item)
             console.log(otherkey)
