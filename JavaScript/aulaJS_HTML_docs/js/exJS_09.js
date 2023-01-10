@@ -7,6 +7,8 @@ let carrinho = {
              'preco':25, 'quantidade':1, 'total':1},
     item3 : {'imagem':'breakfast-ga9b591474_1920.jpg', 'nome':'Ovos com bacon', 
              'preco':31, 'quantidade':1, 'total':1},
+    item4 : {'imagem':'salmon-g0bb6a9f46_1920.jpg', 'nome':'Salmão Grelhado', 
+             'preco':78, 'quantidade':1, 'total':1},
     'criaImagem':function(url, nome, obj){
         let imagem = new Image()
         imagem.src = url
@@ -28,6 +30,11 @@ let carrinho = {
             document.querySelector(`.item-carrinho-${i} .item-total`).innerText=`R$ ${total.toFixed(2)}`
             console.log(this)  // no console aparece as interações realizadas na tela
         }
+    },
+    'criaSpan':function(key, otherkey, obj){
+        var span = document.createElement('span')
+        span.innerText = carrinho[key][otherkey]
+        obj.appendChild(span)
     }
 }
 
@@ -58,7 +65,7 @@ Object.keys(carrinho).forEach((key, i)=>{
             item.setAttribute('class',`col item-${otherkey}`)
             ii === 0 ? carrinho['criaImagem'](`./images/produtos/${carrinho[key].imagem}`, carrinho[key].nome,item) :
             ii === 3 ? carrinho['criaInputNumber'](item, key, i) :
-            item.innerText = carrinho[key][otherkey]
+            carrinho['criaSpan'](key, otherkey, item)
             divItem.appendChild(item)
             console.log(otherkey)
         })
