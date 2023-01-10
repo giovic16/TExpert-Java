@@ -11,20 +11,19 @@ turno2Txt = document.querySelector('#func02-turno')
 setor1Txt = document.querySelector('#func01-setor')
 setor2Txt = document.querySelector('#func02-setor')
 
-turno1Txt.value = `${turno1}hs`
-document.querySelector('#info1-00 span:nth-of-type(1)').innerText = `${turno1}hs`
-turno2Txt.value = `${turno2}hs`
-document.querySelector('#info1-01 span:nth-of-type(1)').innerText = `${turno2}hs`
-
+function turno(){
+    turno1Txt.value = `${turno1}hs`
+    document.querySelector('#info1-00 span:nth-of-type(1)').innerText = `${turno1}hs`
+    turno2Txt.value = `${turno2}hs`
+    document.querySelector('#info1-01 span:nth-of-type(1)').innerText = `${turno2}hs`
+}
+turno()
 
 document.querySelector("#btnConfTurno").addEventListener('click',function(){
     turno1 = turno1 + turno2 //12 - 4 =
     turno2 = turno1 - turno2 // = 8 - 4 =
     turno1 = turno1 - turno2 // = 4
-    turno1Txt.value = `${turno1}hs`
-    document.querySelector('#info1-00 span:nth-of-type(1)').innerText = `${turno1}hs`
-    turno2Txt.value = `${turno2}hs`
-    document.querySelector('#info1-01 span:nth-of-type(1)').innerText = `${turno2}hs`
+    turno()
 }) 
 
 setor1Txt.value = "Atendimento/Caixa"
@@ -39,3 +38,15 @@ document.querySelector("#btnConfSetor").addEventListener('click',function(){
     setor2Txt.value = tempo
     document.querySelector('#info1-01 span:nth-of-type(2)').innerText = setor2Txt.value
 }) 
+
+let anterior = 0
+document.querySelectorAll('input[type=radio]').forEach((n, i)=>{
+
+    n.onclick = function(){
+        if(n.checked){
+            document.querySelector(`.dupla:nth-of-type(${(i) + 1})`).classList.remove('bg-light')
+        }
+        document.querySelector(`.dupla:nth-of-type(${(anterior) + 1})`).classList.add('bg-light')
+        anterior = i
+    }
+})
