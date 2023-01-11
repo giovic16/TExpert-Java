@@ -3,7 +3,7 @@ console.log('testando file js')
 // import { msg02, msgAula} from "./module/modulesAula11.js"
 // console.log(msgAula('Lógica'))
 
-import {trocaTurno} from "./module/modulesAula11.js"
+import {trocaSetor, trocaTurno} from "./module/modulesAula11.js"
 
 let turno1Txt, turno2Txt, setor1Txt, setor2Txt, 
     setor1, setor2, btnConfTurno, btnConfSetor
@@ -26,18 +26,25 @@ document.querySelector("#btnConfTurno").addEventListener('click',function(){
                document.querySelector('#info1-01 span:nth-of-type(1)'))
 }) 
 
-setor1Txt.value = "Atendimento/Caixa"
-document.querySelector('#info1-00 span:nth-of-type(2)').innerText = setor1Txt.value
-setor2Txt.value = "Entrega"
-document.querySelector('#info1-01 span:nth-of-type(2)').innerText = setor2Txt.value
+trocaSetor(setor1Txt, 
+           setor2Txt, 
+           document.querySelector('#info1-00 span:nth-of-type(2)'),
+           document.querySelector('#info1-01 span:nth-of-type(2)'))
 
 document.querySelector("#btnConfSetor").addEventListener('click',function(){
-    var tempo = setor1Txt.value
-    setor1Txt.value = setor2Txt.value
-    document.querySelector('#info1-00 span:nth-of-type(2)').innerText = setor1Txt.value
-    setor2Txt.value = tempo
-    document.querySelector('#info1-01 span:nth-of-type(2)').innerText = setor2Txt.value
+    trocaSetor(setor1Txt, 
+               setor2Txt, 
+               document.querySelector('#info1-00 span:nth-of-type(2)'),
+               document.querySelector('#info1-01 span:nth-of-type(2)'))
 }) 
+
+// document.querySelector("#btnConfSetor").addEventListener('click',function(){
+//     var tempo = setor1Txt.value
+//     setor1Txt.value = setor2Txt.value
+//     document.querySelector('#info1-00 span:nth-of-type(2)').innerText = setor1Txt.value
+//     setor2Txt.value = tempo
+//     document.querySelector('#info1-01 span:nth-of-type(2)').innerText = setor2Txt.value
+// }) 
 
 let anterior = 0
 document.querySelectorAll('input[type=radio]').forEach((n, i)=>{
