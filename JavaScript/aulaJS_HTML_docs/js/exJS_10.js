@@ -1,4 +1,20 @@
 console.log('testando file js')
+// IMPORTAÇÃO
+// import { msg02 } from './module/modules'
+
+// Alternativa 1
+// let modulo = await import('./module/modules.js')
+// console.log(modulo.msg02)
+// console.log(modulo.msgAula('JavaScript'))
+
+// Alternativa 2
+// let {msgAula, msg02} = await import('./module/modules.js')
+// console.log(msgAula('JavaScript'))
+// console.log(msg02)
+
+// Alternativa 3
+import { msg02, msgAula} from "./module/modules.js"
+console.log(msgAula('Lógica'))
 
 let turno1Txt, turno2Txt, setor1Txt, setor2Txt, turno1, 
     turno2, setor1, setor2, btnConfTurno, btnConfSetor
