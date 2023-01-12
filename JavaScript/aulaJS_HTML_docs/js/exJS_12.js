@@ -6,7 +6,14 @@ console.log('testando file js')
 import {trocaSetor, trocaTurno} from "./module/modulesAula11.js"
 
 let turno1Txt, turno2Txt, setor1Txt, setor2Txt, tipo1Txt, 
-    tipo2Txt, setor1, setor2, btnConfTurno, btnConfSetor
+    tipo2Txt, setor1, setor2, btnConfTurno, btnConfSetor, 
+    ativo, anterior, duplas, listOn, listOff
+
+duplas = {
+    dupla0 : ['Estela Martins','Adonis Santos'],
+    dupla1 : ['Cleonildo Amarante','Pilar Detomasi'],
+    dupla2 : ['Francis Albieri','Portella Afonso Silva']
+}
 
 turno1Txt = document.querySelector('#func01-turno')
 turno2Txt = document.querySelector('#func02-turno')
@@ -49,15 +56,18 @@ document.querySelector("#btnConfTipoTurno").addEventListener('click',function(){
     document.querySelector('#info1-01 span:nth-of-type(3)').innerText = tipo2Txt.value
 }) 
 
-let anterior = 0
+anterior = 0
+ativo = 0
+listOn = ['border','border-4','border-warning']
 document.querySelectorAll('input[type=radio]').forEach((n, i)=>{
 
-    n.onclick = function(){
+    n.onchange = function(){
         i == 0 ? anterior = 1 : null
-        if(n.checked){
-            document.querySelector(`.dupla:nth-of-type(${(i) + 1})`).classList.remove('bg-light')
-        }
-        document.querySelector(`.dupla:nth-of-type(${(anterior) + 1})`).classList.add('bg-light')
+        // document.querySelector(`.dupla:nth-of-type(${(i) + 1})`).classList.remove('bg-light')
+        // document.querySelector(`.dupla:nth-of-type(${(anterior) + 1})`).classList.add('bg-light')
         anterior = i
+        ativo = i
+        document.querySelector('label[for=func-01').innerText = duplas[`dupla${i}`][0]
+        document.querySelector('label[for=func-02').innerText = duplas[`dupla${i}`][1]
     }
 })
