@@ -13,6 +13,23 @@ console.log(y)
 w = new Date()
 console.log(w.getTime())
 
+let meses = ['Jan','Fev','Mar','Abr','Mai','Jun','Jul','Ago','Set','Out','Nov','Dez']
+let semana = ['Dom','Seg','Ter','Qua','Qui','Sex','Sab',]
+
+function dataDeHoje_nomes() {
+    let hoje = new Date()
+    let diaDaSemana = hoje.getDay()
+    let diaDoMes = hoje.getDate().toString()
+    diaDoMes = diaDoMes.length == 1 ? `0${diaDoMes}` : diaDoMes 
+    let mesDoAno = hoje.getMonth().toString()
+    mesDoAno = mesDoAno.length == 1 ? `0${mesDoAno}`: mesDoAno
+    let anoAtual = hoje.getFullYear()
+    let dataAtual = `São Paulo, ${diaDoMes}, ${semana[diaDaSemana]} de ${meses[Number(mesDoAno)]} de ${anoAtual}`
+    return dataAtual
+}
+document.querySelector('.p1').innerText = dataDeHoje()
+document.querySelector('.p2').innerText = dataDeHoje_nomes()
+
 
 function dataDeHoje() {
     let hoje = new Date()
@@ -28,7 +45,9 @@ function dataDeHoje() {
 console.log(dataDeHoje())
 
 // getMonth() 0 a 11 - 0 = janeiro | 11 = dezembro
-// getDate() 0 a 6 - 0 = segunda | 6 = domingo
+// getDay() 0 a 6 - 0 = domingo | 6 = sabado
+// getDate() dia do mês
+// getFullYear() ano
 
 // 1000000/1000 - segundos = 1000
 // 1000000/60000 - minutos = 16.6
