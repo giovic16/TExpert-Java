@@ -44,6 +44,19 @@ function dataDeHoje() {
 }
 console.log(dataDeHoje())
 
+function inicio() {
+    let tempo = new Date()
+    inicio = tempo.getTime()
+    console.log(inicio)
+    return inicio
+}
+let tempoInicial = inicio()
+
+document.querySelector('#btnFim').addEventListener('click',()=>{
+    let fim = Date.now()
+    let tempoDecorrido = `${(fim - tempoInicial)/1000} segundos`
+    document.querySelector('.p3').innerText = tempoDecorrido
+})
 // getMonth() 0 a 11 - 0 = janeiro | 11 = dezembro
 // getDay() 0 a 6 - 0 = domingo | 6 = sabado
 // getDate() dia do mês
