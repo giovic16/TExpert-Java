@@ -3,10 +3,10 @@ console.log('testando file js')
 // import { msg02, msgAula} from "./module/modulesAula11.js"
 // console.log(msgAula('Lógica'))
 
-import {trocaSetor, trocaTurno} from "./module/modulesAula11.js"
+import {trocaSetor, trocaTurno, trocaTipoTurno, extra1, extra2} from "./module/modulesAula11.js"
 
 let turno1Txt, turno2Txt, setor1Txt, setor2Txt, tipo1Txt, 
-    tipo2Txt, setor1, setor2, anterior, duplas, listOn, listOff,
+    tipo2Txt, setor1, setor2, anterior, duplas, listOn,
     infoT1, infoT2, infoS1, infoS2, infoTt1, infoTt2
 
 anterior = document.querySelector(`.dupla-0`)
@@ -36,11 +36,11 @@ tipo2Txt = document.querySelector('#func02-extra')
 
 
 infos(ativo)
+trocaTurno(turno1Txt, turno2Txt, infoT1, infoT2, false)
 
-trocaTurno(turno1Txt, turno2Txt, infoT1, infoT2)
 document.querySelector("#btnConfTurno").addEventListener('click',function(){
     infos(ativo)
-    trocaTurno(turno1Txt, turno2Txt, infoT1, infoT2)
+    trocaTurno(turno1Txt, turno2Txt, infoT1, infoT2, true)
 }) 
 
 trocaSetor(setor1Txt, setor2Txt, infoS1, infoS2)
@@ -49,25 +49,26 @@ document.querySelector("#btnConfSetor").addEventListener('click',function(){
     trocaSetor(setor1Txt, setor2Txt, infoS1, infoS2)
 }) 
 
-document.querySelector('#info1-00 span:nth-of-type(3)').innerText = extra1
-document.querySelector('#info1-00 span:nth-of-type(3)').innerText = extra2
 document.querySelector('#func01-extra').value = extra1
 document.querySelector('#func02-extra').value = extra2
 
 document.querySelector("#btnConfTipoTurno").addEventListener('click',function(){
+    infos(ativo)
     trocaTipoTurno(tipo1Txt, tipo2Txt, infoTt1, infoT2)
 }) 
 
 
 listOn = ['border','border-4','border-warning']
-listOff = []
+document.querySelector(`.dupla-0`).classList.remove('bg-light')
+document.querySelector(`.dupla-0`).classList.add(...listOn)
+
 document.querySelectorAll('input[type=radio]').forEach((n, i)=>{
 
     n.onchange = function(){
-        // i == 0 ? anterior = 1 : null
         document.querySelector(`.dupla-${i}`).classList.remove('bg-light')
         document.querySelector(`.dupla-${i}`).classList.add(...listOn)
         anterior.classList.remove(...listOn)
+        anterior.classList.add('bg-light')
         anterior = document.querySelector(`.dupla-${i}`)
         ativo = i
         document.querySelector('label[for=func-01]').innerText = duplas[`dupla${i}`][0]
