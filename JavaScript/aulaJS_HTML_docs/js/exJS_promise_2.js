@@ -51,18 +51,21 @@ btnConfirma.onclick = function() {
     .catch(erro=>{erro})
 }
 
-// PROMISES
-// let info = true // retorna resolve
-// // let info = false - retorna reject
-// function principal(resolve, reject) {
-//     info ? resolve('Deu certo!',
-//     document.querySelector('#titulo01').innerText = 'EX_18 Javascript') : reject('Aconteceu algo errado!')
-// }
-// const minhaPromise = new Promise(principal)
+function info_1() {
+    console.log('Atenção, verifique sua conta')
+}
 
-// minhaPromise.then(m => {
-//     console.log('Então', m)
-// }).catch(err => {
-//     console.log('Então', err) // executada quando info for false
-// })
+function info_2() {
+    console.log('Atenção, hora de trocar a senha')
+}
 
+function info_3() {
+    console.log('Atenção, você ganhou 100 pontos')
+}
+
+// Promise.resolve().then(()=> console.log(2), info_1())
+[info_1, info_2].reduce((a, b) => a.then(b),Promise.resolve()) // as infos foram substituidas por a, b, c
+
+const aguarde = ms => new Promise(resolve => setTimeout(resolve, ms))
+aguarde(3000).then(()=> info_3()) // retorna a frase dentro de info_3 após 3s
+console.log('Inicio') // imprime antes do conteúdo que está na promise
