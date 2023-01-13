@@ -22,13 +22,15 @@ let carrinho = {
         inputNumber.setAttribute('class', 'w-50 border-0 bg-light')
         inputNumber.min = '0'
         inputNumber.max = '10'
-        inputNumber.value = '0'
+        inputNumber.value = carrinho[key].quantidade
         obj.appendChild(inputNumber)
 
         inputNumber.onchange = function() {
             let total = carrinho[key].preco * this.value 
             resultado = 0
             document.querySelector(`.item-carrinho-${i} .item-total span`).innerText=`R$ ${total.toFixed(2)}`
+            carrinho[key].quantidade = this.value
+            carrinho[key].total = total
             carrinho['totalCarrinho']()
         }
     },
@@ -47,6 +49,8 @@ let carrinho = {
         })
     },
     'deleteItem':function(item){
+        resultado -= carrinho[item].total
+        document.querySelector('#totalCarrinho').innerText = `R$ ${resultado.toFixed(2)}`
         delete carrinho[item]
         montaCarrinho()
     }
