@@ -30,25 +30,39 @@ document.querySelector('.sair').style.cursor = 'pointer'
 document.querySelector('.sair').addEventListener('click',sair)
 
 localStorage.user ? verificaUser() : null
+
+function f_login(resolve, reject) {
+    if (nomeVisitante.value === "") {
+        reject(alert('Preencha o campo!'))
+    }else {
+        resolve(
+            mensagem.style.display = "block",
+            mensagem.textContent = `Oi ${nomeVisitante.value}, seja bem vindo 👋😊`,
+            localStorage.setItem('user',nomeVisitante.value),
+            document.querySelector('.user').innerText = localStorage.getItem('user'),
+            document.querySelector('.sair').classList.remove('hide')
+        )
+    }
+}
+
 btnConfirma.onclick = function() {
-    mensagem.style.display = "block"
-    mensagem.textContent = `Oi ${nomeVisitante.value}, seja bem vindo 👋😊`
-    localStorage.setItem('user',nomeVisitante.value)
-    document.querySelector('.user').innerText = localStorage.getItem('user')
-    document.querySelector('.sair').classList.remove('hide')
+    const login = new Promise(f_login)
+    login.then(result => {result})
+    .catch(erro=>{erro})
 }
 
 // PROMISES
-let info = true // retorna resolve
-// let info = false - retorna reject
-function principal(resolve, reject) {
-    info ? resolve('Deu certo!',
-    document.querySelector('#titulo01').innerText = 'EX_17 Javascript') : reject('Aconteceu algo errado!')
-}
-const minhaPromise = new Promise(principal)
+// let info = true // retorna resolve
+// // let info = false - retorna reject
+// function principal(resolve, reject) {
+//     info ? resolve('Deu certo!',
+//     document.querySelector('#titulo01').innerText = 'EX_18 Javascript') : reject('Aconteceu algo errado!')
+// }
+// const minhaPromise = new Promise(principal)
 
-minhaPromise.then(m => {
-    console.log('Então', m)
-}).catch(err => {
-    console.log('Então', err) // executada quando info for false
-})
+// minhaPromise.then(m => {
+//     console.log('Então', m)
+// }).catch(err => {
+//     console.log('Então', err) // executada quando info for false
+// })
+
