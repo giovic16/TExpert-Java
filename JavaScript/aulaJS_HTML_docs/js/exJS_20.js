@@ -2,13 +2,13 @@ console.log('testando file js')
 let resultado = 0
 let carrinho = {
     item1 : {'imagem':'salad-gf22844a91_1920.jpg', 'nome':'Salada Mix', 
-             'preco':12, 'quantidade':0, 'total':0},
+             'preco':12, 'quantidade':0, 'total':0, 'fechar': 'x'},
     item2 : {'imagem':'beef-g66eb2a540_1920.jpg', 'nome':'Carne Grelhada', 
-             'preco':25, 'quantidade':0, 'total':0},
+             'preco':25, 'quantidade':0, 'total':0, 'fechar': 'x'},
     item3 : {'imagem':'breakfast-ga9b591474_1920.jpg', 'nome':'Ovos com bacon', 
-             'preco':31, 'quantidade':0, 'total':0},
+             'preco':31, 'quantidade':0, 'total':0, 'fechar': 'x'},
     item4 : {'imagem':'salmon-g0bb6a9f46_1920.jpg', 'nome':'Salmão Grelhado', 
-             'preco':78, 'quantidade':0, 'total':0},
+             'preco':78, 'quantidade':0, 'total':0, 'fechar': 'x'},
     'criaImagem':function(url, nome, obj){
         let imagem = new Image()
         imagem.src = url
@@ -36,6 +36,7 @@ let carrinho = {
         var span = document.createElement('span')
         otherkey == 'total' ? span.innerText = `R$ ${carrinho[key][otherkey].toFixed(2)}` :
         span.innerText = carrinho[key][otherkey]
+        otherkey == 'fechar' ? span.onclick = function(){carrinho['deleteItem'](key)} : null
         obj.appendChild(span)
     },
     'totalCarrinho':function() {
@@ -44,6 +45,10 @@ let carrinho = {
             resultado += parseInt(obj.substring(3, obj.length))
             document.querySelector('#totalCarrinho').innerText = `R$ ${resultado.toFixed(2)}`
         })
+    },
+    'deleteItem':function(item){
+        delete carrinho[item]
+        montaCarrinho()
     }
 }
 
@@ -64,23 +69,30 @@ let busca =/opções/g
 let msg02 = fraseCarrinho.replace(busca, 'refeições')
 document.querySelector('#msgCarrinho').innerText = msg02
 
-Object.keys(carrinho).forEach((key, i)=>{
-    if (typeof carrinho[key] === 'object') {
-        var divItem = document.createElement('div')
-        divItem.setAttribute('class',`item-carrinho-${i} row mt-2`)
-
-        console.log(i,'x')
-            Object.keys(carrinho[key]).forEach((otherkey,ii)=>{
-                var item = document.createElement('div')
-                item.setAttribute('class',`col item-${otherkey}`)
-                ii === 0 ? carrinho['criaImagem'](`./images/produtos/${carrinho[key].imagem}`, carrinho[key].nome,item) :
-                ii === 3 ? carrinho['criaInputNumber'](item, key, i) :
-                carrinho['criaSpan'](key, otherkey, item)
-                divItem.appendChild(item)
-            })
-            document.querySelector('#itens-carrinho').appendChild(divItem)   
+function montaCarrinho() {
+    const divBox = document.getElementById('itens-carrinho')
+    while(divBox.firstChild){
+        divBox.removeChild(divBox.firstChild)
     }
-})
+    Object.keys(carrinho).forEach((key, i)=>{
+        if (typeof carrinho[key] === 'object') {
+            var divItem = document.createElement('div')
+            divItem.setAttribute('class',`item-carrinho-${i} row mt-2`)
+    
+            console.log(i,'x')
+                Object.keys(carrinho[key]).forEach((otherkey,ii)=>{
+                    var item = document.createElement('div')
+                    item.setAttribute('class',`col item-${otherkey}`)
+                    ii === 0 ? carrinho['criaImagem'](`./images/produtos/${carrinho[key].imagem}`, carrinho[key].nome,item) :
+                    ii === 3 ? carrinho['criaInputNumber'](item, key, i) :
+                    carrinho['criaSpan'](key, otherkey, item)
+                    divItem.appendChild(item)
+                })
+                document.querySelector('#itens-carrinho').appendChild(divItem)   
+        }
+    })   
+}
+montaCarrinho()
 
 // Criando elementos HTML
 let p = document.createElement('p')

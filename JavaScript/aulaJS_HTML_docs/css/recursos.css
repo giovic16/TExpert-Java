@@ -50,3 +50,6 @@
 .bgPadrao{
     background-color:rgba(243,236,227,0.2)
 }
+.item-fechar {
+    cursor: pointer;
+}
