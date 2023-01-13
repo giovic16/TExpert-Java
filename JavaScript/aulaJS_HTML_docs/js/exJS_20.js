@@ -94,6 +94,19 @@ function montaCarrinho() {
 }
 montaCarrinho()
 
+function cupomDesconto() {
+    let cupom = Math.random().toString(36).substring(2,9)
+    return cupom
+}
+
+document.querySelector('#cupom p').innerText = cupomDesconto()
+document.querySelector('#btnCupom').addEventListener('click', ()=>{
+    let desconto = resultado * .9
+    document.querySelector('#inputDesconto').value.toLowerCase() == document.querySelector('#cupom p').innerText ?
+    document.querySelector('#totalCarrinho').innerText = desconto.toFixed(2) : alert('Cupom inválido')
+})
+
+
 // Criando elementos HTML
 let p = document.createElement('p')
 p.style = "color:brown"
