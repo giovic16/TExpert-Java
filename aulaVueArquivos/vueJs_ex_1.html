@@ -30,7 +30,22 @@
     }
 </style>
 <body>
-
+    <div id="app">{{msg}} 
+        <p>{{msg2}}</p> 
+    </div> 
+</body> 
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+    <script> 
+    const {createApp} = Vue 
+    createApp({ 
+        data(){ 
+            return{ 
+                msg: 'Bem vindo ao Vue Js!', 
+                msg2: 'Bora codar' 
+                } 
+            } 
+        }).mount('#app') 
+    </script>
    <!-- OPÇÃO IMPORTMAP-->
     <!-- <script type="importmap">
         //     imports:{
