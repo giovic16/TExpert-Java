@@ -34,9 +34,10 @@
         <p>{{msg2}}</p> 
     </div> 
 </body> 
-    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
-    <script> 
-    const {createApp} = Vue 
+    <!-- <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>  -->
+    <script type="module"> 
+    // const {createApp} = Vue 
+    import {createApp} from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
     createApp({ 
         data(){ 
             return{ 
