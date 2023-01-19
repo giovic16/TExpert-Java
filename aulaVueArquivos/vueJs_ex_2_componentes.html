@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Ex_01</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<script src="app.js" type="module"></script>
+<style>
+    #app{
+        display:flex;
+        justify-content:center;
+        min-height: 50vh;
+        font-weight:700;
+        padding:0;
+        margin:0;
+        box-sizing:border-box;
+        flex-flow: column;
+        border:1px solid #999;
+    }
+    p{
+        font-size:2.5rem;
+            align-self:center;
+    }
+    a{
+        display: block;
+        font-size: 1.5rem;
+    }
+    button {
+        font-size: 2rem;
+    }
+</style>
+<body>
+    <div id="app">{{msg}} 
+        <p>{{msg2}}</p>
+        <button @click="count++" class="w-25 mx-auto">{{count}}</button> 
+    </div> 
+</body> 
+</html>
