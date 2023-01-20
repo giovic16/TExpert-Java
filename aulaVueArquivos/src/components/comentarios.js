@@ -6,8 +6,8 @@ export default{
             inputNome:'',
             txtMensagem:'',
             comentarios:[{
-                nome:'Roque Fernando M. Sousa',
-                mensagem:'Lorem Ipsum sit amet'
+                nome:'Giovana Mendes',
+                mensagem:'Lorem Ipsum sit amet',
             }]
             } 
         },
