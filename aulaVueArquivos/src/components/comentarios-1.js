@@ -1,8 +1,6 @@
 export default{
     data(){
         return{
-            // nome:'Roque Fernando M. Sousa',
-            // mensagem:'Lorem Ipsum sit amet',
             inputNome:'',
             txtMensagem:'',
             comentarios:[]
