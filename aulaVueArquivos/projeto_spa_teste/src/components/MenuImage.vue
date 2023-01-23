@@ -1,6 +1,6 @@
 <template>
     <NavBar />
-    <p class="p-3">Aproveite nossas promoções</p>
+    <p class="p-3"><a href="#">Aproveite nossas promoções</a></p>
     <!-- <img :src="require('@/assets/produtos/noodles-7390775_1920.jpg')" class="w-25" /> -->
     <img :src="urlImage" :alt="altImage" class="w-25" />
     
@@ -21,3 +21,9 @@ export default {
     }
 }
 </script>
+
+<style>
+  a {
+    color:green;
+  }
+</style>

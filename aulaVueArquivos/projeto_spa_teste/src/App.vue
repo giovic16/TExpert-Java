@@ -6,6 +6,7 @@
   <hr />
   <button @click="showHideEmail" class="btn btn-info my-2" >Clique para contato</button>
   <p v-show="showEmail" class="mt-2">restaurante1312@email.com</p>
+  <p v-show="showEmail" class="mt-2"><a href="tel: 11 999990000">(11) 999990000</a></p>
   <footer>
     FOOTER
     <MenuImage />
@@ -35,3 +36,9 @@
     }
   }
 </script>
+
+<style>
+  a {
+    color:red;
+  }
+</style>
