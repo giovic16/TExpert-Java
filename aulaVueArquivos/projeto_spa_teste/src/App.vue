@@ -1,14 +1,24 @@
 <template>
-  <MeuComp v-if="show"/>
-  <p>A aula de hoje é {{ info }}</p>
+  <header>HEADER</header>
+  <hr />
+  <NavBar />
+
+  <!-- <MeuComp v-if="show"/> -->
+  <p class="mt-3">A aula de hoje é {{ info }}</p>
+  <hr />
+  <footer>FOOTER
+    <MenuImage />
+  </footer>
 </template>
 
 <script>
-  import MeuComp from './components/MeuComp'
+  import NavBar from './components/NavBar'
+  import MenuImage from './components/MenuImage'
   export default {
     name: 'App',
     components: {
-      MeuComp
+      NavBar,
+      MenuImage
     },
     data() {
       return {
