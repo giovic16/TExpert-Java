@@ -1,6 +1,7 @@
 <template>
   <HeaderContent />
   <NavBar />
+  <SobreNos />
   <MainContent />
   <FooterContent />
 </template>
@@ -8,6 +9,7 @@
 <script>
   import HeaderContent from './components/HeaderContent'
   import NavBar from './components/NavBar'
+  import SobreNos from './components/SobreNos'
   import MainContent from './components/MainContent'
   import FooterContent from './components/FooterContent'
 
@@ -17,7 +19,8 @@
       NavBar,
       HeaderContent,
       MainContent,
-      FooterContent
+      FooterContent,
+      SobreNos
     },
     data() {
       return {
