@@ -1,9 +1,14 @@
 <template>
-    <h1>Bora codar com Vue3 JS!</h1>
+    <h1>Bora codar com {{ vue }} JS!</h1>
 </template>
 
 <script>
     export default {
-        name: 'MeuComp'
+        name: 'MeuComp',
+        data() {
+            return{
+                vue: 'Vue 4'
+            }
+        }
     }
 </script>

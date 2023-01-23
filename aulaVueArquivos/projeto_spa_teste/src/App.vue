@@ -1,5 +1,6 @@
 <template>
   <MeuComp />
+  <p>A aula de hoje é {{ info }}</p>
 </template>
 
 <script>
@@ -8,6 +9,11 @@
     name: 'App',
     components: {
       MeuComp
+    },
+    data() {
+      return {
+        info: 'Iniciando com CLI Vue'
+      }
     }
   }
 </script>
