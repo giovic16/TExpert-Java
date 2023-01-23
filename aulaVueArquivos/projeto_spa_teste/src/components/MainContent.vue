@@ -6,18 +6,22 @@
             {{ p.opcao }}
         </li>
     </ul>
-    <button @click="showHideEmail" class="btn btn-info my-2" >Clique para contato</button>
-    <p v-show="showEmail" class="mt-2">restaurante1312@email.com</p>
-    <p v-show="showEmail" class="mt-2"><a href="tel: 11 999990000">(11) 999990000</a></p>
+    <button @click="showHideContato" class="btn btn-info my-2" >Clique para contato</button>
+    <p v-show="showContato" class="mt-2">restaurante1312@email.com</p>
+    <p v-show="showContato" class="mt-2"><a href="tel: 11 999990000">(11) 999990000</a></p>
+    <div v-show="showContato">
+        <FormContato />
+    </div>
 </template>
 
 <script>
+import FormContato from './forms/FormContato'
 export default {
     name: 'MainContent',
     data() {
         return {
             info: 'Conheça nossos pratos',
-            showEmail: false,
+            showContato: false,
             pratos: [
                 {id:1, opcao: 'Salmão Grelhado'},
                 {id:2, opcao: 'Feijoada Light'},
@@ -26,10 +30,13 @@ export default {
         }
     },
     methods: {
-      showHideEmail() {
-        this.showEmail = !this.showEmail
-        console.log(this.showEmail)
+      showHideContato() {
+        this.showContato = !this.showContato
+        console.log(this.showContato)
       }
+    },
+    components: {
+        FormContato
     }
 }
 </script>
