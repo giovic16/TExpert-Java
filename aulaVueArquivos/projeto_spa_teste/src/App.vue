@@ -1,5 +1,5 @@
 <template>
-  <MeuComp />
+  <MeuComp v-if="show"/>
   <p>A aula de hoje é {{ info }}</p>
 </template>
 
@@ -12,7 +12,8 @@
     },
     data() {
       return {
-        info: 'Iniciando com CLI Vue'
+        info: 'Iniciando com CLI Vue',
+        show: true
       }
     }
   }
