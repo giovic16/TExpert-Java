@@ -5,14 +5,26 @@
   <MainContent />
   <FooterContent />
 
-  <SetoresContato>
+  <div class="boxSetoresMain">
+    <SetoresContato>
     <h3>Reservas</h3>
+    <template #emailSetor="{email}">
+      Email: {{ email.email_reservas }}
+    </template>
   </SetoresContato>
 
   <SetoresContato>
     <h3>Financeiro</h3>
+    <template #emailSetor="{email}">
+      Email: {{ email.email_financeiro }}
+    </template>
   </SetoresContato>
-  
+    
+  <SetoresContato>
+    <h3>Outras Informações</h3>
+    <template #emailSetor></template>
+  </SetoresContato>
+  </div>
 </template>
 
 <script>
@@ -44,5 +56,9 @@
 <style>
   a {
     color:red;
+  }
+
+  .boxSetoresMain {
+    display: flex;
   }
 </style>
