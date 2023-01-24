@@ -6,10 +6,12 @@
         <slot name="emailSetor" :email="{email_reservas, email_financeiro}">
             <p>Email: restaurante@email.com.br</p>
         </slot>
+        <RedesSociais />
     </div>
 </template>
 
 <script>
+import RedesSociais from './RedesSociais';
 export default {
     name: 'SetoresContato',
     data() {
@@ -18,6 +20,9 @@ export default {
             email_financeiro: 'financeiro@email.com.br'
         }
     },
+    components: {
+        RedesSociais
+    }
 }
 </script>
 
