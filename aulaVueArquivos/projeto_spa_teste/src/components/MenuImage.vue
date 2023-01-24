@@ -3,7 +3,7 @@
     <p class="p-3"><a href="#">Aproveite nossas promoções</a></p>
     <!-- <img :src="require('@/assets/produtos/noodles-7390775_1920.jpg')" class="w-25" /> -->
     <div class="border p-3 mb-5">
-        <img :src="urlImage" :alt="altImage" class="w-25" />
+        <img :src="urlImage" :alt="altImage" class="w-25" data-bs-toggle="modal" data-bs-target="#modalVue"/>
         <h4 class="py-3">{{ altImage }}</h4>
         <ButtonImage @trocarImagem="novaImagem" />
     </div>
@@ -37,5 +37,8 @@ export default {
 <style>
   a {
     color:green;
+  }
+  img {
+    cursor: pointer;
   }
 </style>
