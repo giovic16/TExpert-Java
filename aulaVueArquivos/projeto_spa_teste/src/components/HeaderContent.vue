@@ -3,7 +3,6 @@
     <ModalView />
     <hr />
 </template>
-
 <script>
 import ModalView from './ModalView';
 export default {
