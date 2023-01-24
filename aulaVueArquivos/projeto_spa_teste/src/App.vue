@@ -4,6 +4,15 @@
   <SobreNos />
   <MainContent />
   <FooterContent />
+
+  <SetoresContato>
+    <h3>Reservas</h3>
+  </SetoresContato>
+
+  <SetoresContato>
+    <h3>Financeiro</h3>
+  </SetoresContato>
+  
 </template>
 
 <script>
@@ -12,6 +21,7 @@
   import SobreNos from './components/SobreNos'
   import MainContent from './components/MainContent'
   import FooterContent from './components/FooterContent'
+  import SetoresContato from './components/SetoresContato'
 
   export default {
     name: 'App',
@@ -20,7 +30,8 @@
       HeaderContent,
       MainContent,
       FooterContent,
-      SobreNos
+      SobreNos,
+      SetoresContato
     },
     data() {
       return {
