@@ -10,14 +10,14 @@
 <script>
 // import OptionAPI from './components/OptionAPI.vue'
 import TemplateRefs from './components/TemplateRefs.vue'
-// import TemplateRefsVfor from './components/TemplateRefsVfor.vue'
+import TemplateRefsVfor from './components/TemplateRefsVfor.vue'
 
 
 export default {
   name: 'App',
   components: {
     TemplateRefs,
-    // TemplateRefsVfor,
+    TemplateRefsVfor,
     // OptionAPI
   }
 }
