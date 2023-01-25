@@ -1,5 +1,6 @@
 <template>
-    <ItemSobremesa :itemProduto="produtos" />
+    <!-- <ItemSobremesa :itemProduto="produtos" /> -->
+    <ItemSobremesa />
 </template>
 
 <script>

@@ -4,7 +4,9 @@
         <span>Estamos aberto 24h</span>
         <div class="box box__produto">
             <!-- <div v-for="sobremesa in itemProduto.pratosQuentes" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div> -->
-            <div v-for="sobremesa in produtos.sobremesas" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div>
+            <!-- <div v-for="sobremesa in produtos.sobremesas" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div> -->
+            <div v-for="sobremesa in lojaSobremesas" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div>
+        
         </div>
     </div>
 </template>
@@ -20,10 +22,22 @@ export default {
     //     }
     // },
     computed: {
-        produtos(){
-            return this.$store.state.produtos
+        // produtos(){
+        //     return this.$store.state.produtos
+        // },
+        // lojaSobremesas(){
+        //         let lojaSobremesas = this.$store.state.produtos.sobremesas.map(
+        //             item => { return {
+        //             nome: item.nome, 
+        //             preco: item.preco
+        //         }
+        //     })
+        //     return lojaSobremesas
+        // }
+        lojaSobremesas(){
+            return this.$store.getters.lojaSobremesas
         }
-    }
+    },
 }
 </script>
 
