@@ -3,8 +3,8 @@ import HomeView from '../views/HomeView.vue'
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
+    path: '/pratos-quentes',
+    name: 'pratos-quentes',
     component: HomeView
   },
   {

@@ -20,25 +20,28 @@ export default createStore({
   }
   },
   getters: {
-    lojaSobremesas:state => {
-      let lojaSobremesas = state.produtos.sobremesas.map(
+    loja:state => tipo => {
+      let loja = state.produtos[tipo].map(
           item => { return {
           nome: item.nome, 
           preco: item.preco
       }
   })
-  return lojaSobremesas
+  return loja
 }
   },
   mutations: {
-    aplicaDesconto:state => {
-      state.produtos.sobremesas.forEach(
+    aplicaDesconto:(state, payload) => {
+      state.produtos[payload].forEach(
         item =>{
             item.preco = (item.preco * .9).toFixed(2)
         })
     }
   },
   actions: {
+    aplicaDesconto:(context, payload) => {
+      context.commit('aplicaDesconto', payload)
+    }
   },
   modules: {
   }

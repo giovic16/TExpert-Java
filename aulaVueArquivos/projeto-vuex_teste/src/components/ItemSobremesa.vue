@@ -5,7 +5,7 @@
         <div class="box box__produto">
             <!-- <div v-for="sobremesa in itemProduto.pratosQuentes" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div> -->
             <!-- <div v-for="sobremesa in produtos.sobremesas" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div> -->
-            <div v-for="sobremesa in lojaSobremesas" :key="sobremesa">{{ sobremesa.nome }} - R${{ sobremesa.preco }}</div>
+            <div v-for="item in loja" :key="item">{{ item.nome }} - R${{ item.preco }}</div>
         
         </div>
     </div>
@@ -13,6 +13,12 @@
 
 <script>
 export default {
+    data(){
+        return {
+            tipo: 'sobremesas'
+            // tipo: 'pratosQuentes'
+        }
+    },
     // props: {
     //     itemProduto:Object
     // },
@@ -34,8 +40,8 @@ export default {
         //     })
         //     return lojaSobremesas
         // }
-        lojaSobremesas(){
-            return this.$store.getters['lojaSobremesas']
+        loja(){
+            return this.$store.getters.loja(this.tipo)
         }
     },
     methods: {
@@ -45,7 +51,8 @@ export default {
             //         item.preco = (item.preco * .9).toFixed(2)
             //     }
             // )
-            this.$store.commit('aplicaDesconto')
+            // this.$store.commit('aplicaDesconto')
+            this.$store.dispatch('aplicaDesconto', this.tipo)
         }
     },
     mounted() {
