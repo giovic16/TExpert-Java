@@ -8,7 +8,7 @@
 </template>
 
 <script>
-// import OptionAPI from './components/OptionAPI.vue'
+import OptionAPI from './components/OptionAPI.vue'
 import TemplateRefs from './components/TemplateRefs.vue'
 import TemplateRefsVfor from './components/TemplateRefsVfor.vue'
 
@@ -18,7 +18,7 @@ export default {
   components: {
     TemplateRefs,
     TemplateRefsVfor,
-    // OptionAPI
+    OptionAPI
   }
 }
 </script>
