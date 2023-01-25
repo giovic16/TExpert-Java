@@ -31,6 +31,12 @@ export default createStore({
 }
   },
   mutations: {
+    aplicaDesconto:state => {
+      state.produtos.sobremesas.forEach(
+        item =>{
+            item.preco = (item.preco * .9).toFixed(2)
+        })
+    }
   },
   actions: {
   },
