@@ -1,15 +1,14 @@
 <template>
     <ItemProduto :tipo="categoria" />
-
 </template>
 
 <script>
 import ItemProduto from '@/components/ItemProduto.vue'
 
 export default {
-    data(){
+        data(){
         return{
-            categoria:'sobremesas'
+            categoria:'pratosQuentes'
         }
     },
     name: 'SobremesasView',
