@@ -2,15 +2,16 @@ package poo;
 
 public class TestaAnimal {
     public static void main(String[] args) {
-        Cachorro cachorro = new Cachorro();
-        Gato gato = new Gato();
+        Animal animal = new Animal();
+        animal.come();
+        animal.anda();
 
+        Cachorro cachorro = new Cachorro();
         cachorro.come();
         cachorro.anda();
-        cachorro.latir();
 
+        Gato gato = new Gato();
         gato.come();
         gato.anda();
-        gato.miar();
     }
 }
