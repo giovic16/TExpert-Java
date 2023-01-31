@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo/Produto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poo/TestaProduto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/TestaPessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -41,16 +40,9 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaProduto">
+  <component name="RunManager" selected="Application.TestaPessoa">
     <configuration name="TestaBreakEContinue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestaBreakEContinue" />
-      <module name="texpert" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaCondicional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestaCondicional" />
       <module name="texpert" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -59,6 +51,19 @@
     <configuration name="TestaFor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestaFor" />
       <module name="texpert" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaPessoa" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo.TestaPessoa" />
+      <module name="texpert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -85,11 +90,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaPessoa" />
         <item itemvalue="Application.TestaProduto" />
         <item itemvalue="Application.TestaBreakEContinue" />
         <item itemvalue="Application.TestaFor" />
         <item itemvalue="Application.TestaWhile" />
-        <item itemvalue="Application.TestaCondicional" />
       </list>
     </recent_temporary>
   </component>
