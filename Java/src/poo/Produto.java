@@ -2,8 +2,9 @@ package poo;
 
 public class Produto {
     // caracteristicas (Dados)
-    String nome, marca; // atributos
-    double preco; // atributos
+    // Atributos
+    String nome, marca;
+    double preco;
     // comportamentos
     void formataPreco(){
         System.out.println("R$ " + preco);
