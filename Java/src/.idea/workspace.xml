@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo/TestaProduto2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../.idea/texpert.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/TestaPessoaPCG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/AnimalPCG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/PessoaPCG.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/teste/TestaPessoaPCG.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Produto.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Produto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaCliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/TestaCliente.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaProduto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Produto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/TestaCliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/TestaCliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/TestaProduto.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/TestaProduto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -42,13 +41,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/infopreta/Desktop/texpert/Java/src"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.TestaProduto2">
     <configuration name="TestaCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo.TestaCliente" />
