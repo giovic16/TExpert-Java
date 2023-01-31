@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poo/TestaPessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/TestaPessoa2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Pessoa.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Pessoa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaPessoa.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/Pessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Pessoa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/TestaPessoa.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/TestaPessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -28,6 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2L48IC9mTPUdprleCn54ptkcgy9" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -40,7 +47,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaPessoa">
+  <component name="RunManager" selected="Application.TestaPessoa2">
     <configuration name="TestaBreakEContinue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestaBreakEContinue" />
       <module name="texpert" />
@@ -68,6 +75,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestaPessoa2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo.TestaPessoa2" />
+      <module name="texpert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestaProduto" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo.TestaProduto" />
       <module name="texpert" />
@@ -81,20 +101,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaWhile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestaWhile" />
-      <module name="texpert" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaPessoa2" />
         <item itemvalue="Application.TestaPessoa" />
         <item itemvalue="Application.TestaProduto" />
         <item itemvalue="Application.TestaBreakEContinue" />
         <item itemvalue="Application.TestaFor" />
-        <item itemvalue="Application.TestaWhile" />
       </list>
     </recent_temporary>
   </component>
