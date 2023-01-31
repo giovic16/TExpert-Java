@@ -11,12 +11,12 @@ public class TestaCliente {
 
 
         Produto produto1 = new Produto();
-        produto1.nome = "Mesa";
-        produto1.marca = "X";
-        produto1.preco = 1000;
+//        produto1.nome = "Mesa";
+//        produto1.marca = "X";
+//        produto1.preco = 1000;
 
         cliente1.produto = produto1;
-        System.out.println(cliente1.produto.nome + " - " + cliente1.produto.marca + " - " + cliente1.produto.preco); // nome, marca e preço do produto do cliente
+//        System.out.println(cliente1.produto.nome + " - " + cliente1.produto.marca + " - " + cliente1.produto.preco); // nome, marca e preço do produto do cliente
 
     }
 }
