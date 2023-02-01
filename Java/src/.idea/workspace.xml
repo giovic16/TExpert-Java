@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo/TestaReferencias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/Pessoa2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/TestaPessoaDois.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Cachorro.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Cachorro.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Gato.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Gato.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Peixe.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Peixe.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaZoologico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/TestaZoologico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Zoologico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Zoologico.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/testeDois/Passaro.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testeDois/Passaro.java" beforeDir="false" afterPath="$PROJECT_DIR$/testeDois/Passaro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -54,7 +46,7 @@
     "last_opened_file_path": "/Users/infopreta/Desktop/texpert/Java/src"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestaReferencias">
+  <component name="RunManager" selected="Application.TestaPessoaDois">
     <configuration name="TestaAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo.TestaAnimal" />
       <module name="texpert" />
@@ -68,8 +60,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poo.TestaCliente" />
+    <configuration name="TestaPessoaDois" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo.TestaPessoaDois" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
@@ -122,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaPessoaDois" />
         <item itemvalue="Application.TestaReferencias" />
         <item itemvalue="Application.TestaZoologico" />
         <item itemvalue="Application.TestaAnimal" />
         <item itemvalue="Application.TestaProduto2" />
-        <item itemvalue="Application.TestaCliente" />
       </list>
     </recent_temporary>
   </component>
