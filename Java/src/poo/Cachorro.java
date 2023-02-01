@@ -1,10 +1,10 @@
 package poo;
 
-public class Cachorro extends Animal {
+public class Cachorro extends Animal implements Barulhento{
 
     @Override
     public void fazBarulho() {
-        System.out.println("Cachorro fazendo barulho");
+        System.out.println("Cachorro latindo");
     }
 
     public void come() {

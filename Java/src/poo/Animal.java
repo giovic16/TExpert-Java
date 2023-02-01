@@ -8,8 +8,6 @@ public abstract class Animal extends SerVivo {
 
     private double tamanhoDaAsa;
 
-    public abstract void fazBarulho();
-
     // métodos
     public void setTipo(int tipo) {
         this.tipo = tipo;

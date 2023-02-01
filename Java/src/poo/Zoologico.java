@@ -5,4 +5,8 @@ public class Zoologico {
         animal.come();
     }
 
+    public void barulho(Barulhento animal) {
+        animal.fazBarulho();
+    }
+
 }

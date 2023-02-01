@@ -1,9 +1,9 @@
 package poo;
 
-public class Gato extends Animal { // extends para herdar da classe principal
+public class Gato extends Animal implements Barulhento{ // extends para herdar da classe principal
     @Override
     public void fazBarulho() {
-        System.out.println("Gato fazendo barulho");
+        System.out.println("Gato miando");
     }
 
     public void come() {
