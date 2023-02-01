@@ -1,6 +1,6 @@
 package poo;
 
-public abstract class Animal extends SerVivo {
+public class Animal extends SerVivo {
     // Atributos
     private String nome;
     private double tamanho;
@@ -9,6 +9,15 @@ public abstract class Animal extends SerVivo {
     private double tamanhoDaAsa;
 
     // métodos
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
@@ -26,6 +35,10 @@ public abstract class Animal extends SerVivo {
 
     }
 
+    @Override
+    public void respira() {
+
+    }
 }
 
 // Relacionamento de classes - TEM UM, composição

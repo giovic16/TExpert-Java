@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/array/SalaDeAula.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/TestaAnimalArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/array/SalaDeAula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/array/SalaDeAula.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Zoologico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Zoologico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/Zoologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Zoologico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -45,7 +49,7 @@
     "last_opened_file_path": "/Users/infopreta/Desktop/texpert/Java/src"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.SalaDeAula">
+  <component name="RunManager" selected="Application.TestaAnimalArray">
     <configuration name="SalaDeAula" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array.SalaDeAula" />
       <module name="texpert" />
@@ -59,8 +63,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poo.TestaAnimal" />
+    <configuration name="TestaAnimalArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo.TestaAnimalArray" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
@@ -113,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaAnimalArray" />
         <item itemvalue="Application.SalaDeAula" />
         <item itemvalue="Application.TestaPessoaDois" />
         <item itemvalue="Application.TestaReferencias" />
         <item itemvalue="Application.TestaZoologico" />
-        <item itemvalue="Application.TestaAnimal" />
       </list>
     </recent_temporary>
   </component>
