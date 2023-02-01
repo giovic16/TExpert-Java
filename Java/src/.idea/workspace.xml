@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/testeDois/Passaro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/Peixe.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/TestaZoologico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo/Zoologico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/TestaAnimal.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/TestaAnimal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimal.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -46,7 +48,7 @@
     "last_opened_file_path": "/Users/infopreta/Desktop/texpert/Java/src"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestaAnimal">
+  <component name="RunManager" selected="Application.TestaZoologico">
     <configuration name="TestaAnimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo.TestaAnimal" />
       <module name="texpert" />
@@ -62,19 +64,6 @@
     </configuration>
     <configuration name="TestaCliente" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo.TestaCliente" />
-      <module name="texpert" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestaPessoa2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poo.TestaPessoa2" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
@@ -112,13 +101,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestaZoologico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo.TestaZoologico" />
+      <module name="texpert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="poo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaZoologico" />
         <item itemvalue="Application.TestaAnimal" />
         <item itemvalue="Application.TestaProduto2" />
         <item itemvalue="Application.TestaCliente" />
         <item itemvalue="Application.TestaString" />
-        <item itemvalue="Application.TestaPessoa2" />
       </list>
     </recent_temporary>
   </component>
