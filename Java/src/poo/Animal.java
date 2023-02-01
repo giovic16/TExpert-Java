@@ -39,6 +39,17 @@ public class Animal extends SerVivo {
     public void respira() {
 
     }
+
+    public double getTamanho() {
+        return tamanho;
+    }
+    public void setTamanho(double tamanho) {
+        if (tamanho <= 0){
+            throw new RuntimeException("Tamanho inválido!");
+        }else{
+            this.tamanho = tamanho;
+        }
+    }
 }
 
 // Relacionamento de classes - TEM UM, composição

@@ -4,6 +4,11 @@ import poo.Animal;
 
 public class TestaZoologico {
     public static void main(String[] args) {
+        // Tudo em java é objeto (tem uma classe)
+        // Exemplos de exceptions:
+        // java.lang.ArrayIndexOutOfBoundsException
+        // java.lang.NullPointerException
+
 
         // String nome - null
         // double tamanho - 0.0
@@ -21,6 +26,5 @@ public class TestaZoologico {
         idades[4] = 4;
 
         idades[5] = 5; // gera uma exception
-
     }
 }
