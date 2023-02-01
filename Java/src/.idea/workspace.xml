@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo/Peixe.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poo/TestaZoologico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poo/Zoologico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/TestaZoologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/TestaZoologico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />

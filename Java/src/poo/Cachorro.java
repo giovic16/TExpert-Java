@@ -2,6 +2,11 @@ package poo;
 
 public class Cachorro extends Animal {
 
+    @Override
+    public void fazBarulho() {
+        System.out.println("Cachorro fazendo barulho");
+    }
+
     public void come() {
         System.out.println("Cachorro comendo");
     }
@@ -11,6 +16,11 @@ public class Cachorro extends Animal {
     }
 
     public void latir(){
+
+    }
+
+    @Override
+    public void respira() {
 
     }
 }

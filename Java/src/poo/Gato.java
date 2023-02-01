@@ -1,6 +1,11 @@
 package poo;
 
 public class Gato extends Animal { // extends para herdar da classe principal
+    @Override
+    public void fazBarulho() {
+        System.out.println("Gato fazendo barulho");
+    }
+
     public void come() {
         System.out.println("Gato comendo");
     }
@@ -9,6 +14,11 @@ public class Gato extends Animal { // extends para herdar da classe principal
         System.out.println("Gato andando");
     }
     public void miar(){
+
+    }
+
+    @Override
+    public void respira() {
 
     }
 }
