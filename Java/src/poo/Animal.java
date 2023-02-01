@@ -8,6 +8,7 @@ public class Animal {
 
     private double tamanhoDaAsa;
 
+    // métodos
     public void setTipo(int tipo) {
         this.tipo = tipo;
     }
@@ -18,6 +19,11 @@ public class Animal {
 
     public void anda(){
         System.out.println("Animal andando");
+    }
+
+    // protected - somente acessado se for do mesmo pacote e herança
+    protected void m1() {
+
     }
 
 }

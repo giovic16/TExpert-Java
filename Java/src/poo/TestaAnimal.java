@@ -1,5 +1,7 @@
 package poo;
 
+import testeDois.Passaro;
+
 public class TestaAnimal {
     public static void main(String[] args) {
         Animal animal = new Animal();
@@ -13,5 +15,8 @@ public class TestaAnimal {
         Gato gato = new Gato();
         gato.come();
         gato.anda();
+
+        Passaro passaro = new Passaro();
+        passaro.m1();
     }
 }
