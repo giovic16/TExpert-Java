@@ -2,8 +2,8 @@ package poo;
 
 public class Animal extends SerVivo {
     // Atributos
-    private String nome;
-    private double tamanho;
+    public String nome;
+    public double tamanho;
     private int tipo; // 0 - cachorro, 1 - gato
 
     private double tamanhoDaAsa;

@@ -18,7 +18,6 @@ public class TestaAnimalArray {
 
         for (Animal animal : zoo.animais){
             System.out.println(animal.getNome());
-            break;
         }
     }
 }

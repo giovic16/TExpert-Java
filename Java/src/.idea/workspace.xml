@@ -5,13 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo/TestaAnimalArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/array/TestaZoologico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/array/SalaDeAula.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/array/SalaDeAula.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Zoologico.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Zoologico.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/Animal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimalArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo/TestaAnimalArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/poo/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poo/Zoologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Zoologico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/TestaAnimalArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/TestaAnimalArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -49,7 +49,7 @@
     "last_opened_file_path": "/Users/infopreta/Desktop/texpert/Java/src"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.TestaAnimalArray">
+  <component name="RunManager" selected="Application.array.TestaZoologico">
     <configuration name="SalaDeAula" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="array.SalaDeAula" />
       <module name="texpert" />
@@ -102,12 +102,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaZoologico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poo.TestaZoologico" />
+    <configuration name="array.TestaZoologico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="array.TestaZoologico" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="poo.*" />
+          <option name="PATTERN" value="array.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.array.TestaZoologico" />
         <item itemvalue="Application.TestaAnimalArray" />
         <item itemvalue="Application.SalaDeAula" />
         <item itemvalue="Application.TestaPessoaDois" />
         <item itemvalue="Application.TestaReferencias" />
-        <item itemvalue="Application.TestaZoologico" />
       </list>
     </recent_temporary>
   </component>
@@ -135,5 +135,15 @@
       <updated>1675118916557</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
