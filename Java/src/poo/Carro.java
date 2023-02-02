@@ -22,9 +22,18 @@ public class Carro extends Veiculo {
         this.marca = marca;
     }
 
+    public String getModelo() {
+        return modelo;
+    }
+
     @Override
     public String toString(){
         return this.modelo;
     }
 
+    @Override
+    public boolean equals(Object outro) {
+        Carro outroCarro = (Carro) outro;
+        return this.modelo.equals(outroCarro.getModelo()); // retorna true se os modelos forem iguais
+    }
 }
