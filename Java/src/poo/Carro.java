@@ -9,10 +9,10 @@ public class Carro extends Veiculo {
     public void trocarMarcha(){
 
     }
-    @Override
-    public String toString(){
-        return "Carro modelo " + this.modelo + " da marca " + this.marca;
-    }
+//    @Override
+//    public String toString(){
+//        return "Carro modelo " + this.modelo + " da marca " + this.marca;
+//    }
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
@@ -21,4 +21,10 @@ public class Carro extends Veiculo {
     public void setMarca(String marca) {
         this.marca = marca;
     }
+
+    @Override
+    public String toString(){
+        return this.modelo;
+    }
+
 }
