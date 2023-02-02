@@ -1,4 +1,4 @@
-package array;
+package collection;
 
 public class SalaDeAula {
     public static void main(String[] args) {

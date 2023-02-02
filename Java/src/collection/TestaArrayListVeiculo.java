@@ -1,6 +1,5 @@
-package array;
+package collection;
 
-import poo.Animal;
 import poo.Carro;
 import poo.Moto;
 import poo.Veiculo;

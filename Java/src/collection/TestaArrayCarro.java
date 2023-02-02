@@ -1,9 +1,8 @@
-package array;
+package collection;
 
 import poo.Carro;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
 public class TestaArrayCarro {
