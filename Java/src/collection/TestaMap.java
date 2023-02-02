@@ -8,9 +8,9 @@ import java.util.Map;
 public class TestaMap {
     public static void main(String[] args) {
 
-        Carro c1 = new Carro("a123", "Ford","Focus");
-        Carro c2 = new Carro("b456", "Lamborghini","Urus");
-        Carro c3 = new Carro("c789", "Audi","Q3");
+        Carro c1 = new Carro("a123", "Ford","Focus", 2010);
+        Carro c2 = new Carro("b456", "Lamborghini","Urus", 2015);
+        Carro c3 = new Carro("c789", "Audi","Q3", 2020);
 
         // Map não mantém uma ordem
         Map<String, Carro> veiculos = new HashMap<>();

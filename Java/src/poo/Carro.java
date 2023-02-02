@@ -1,17 +1,19 @@
 package poo;
 
-public class Carro extends Veiculo {
+public class Carro extends Veiculo implements Comparable<Carro> {
 
     private String placa;
     private String modelo;
     private String marca;
+    private int ano;
 
     public Carro() { }
 
-    public Carro(String placa, String marca, String modelo) {
+    public Carro(String placa, String marca, String modelo, int ano) {
         this.placa = placa;
         this.marca = marca;
         this.modelo = modelo;
+        this.ano = ano;
     }
 
     public void trocarMarcha(){
@@ -42,6 +44,10 @@ public class Carro extends Veiculo {
         return marca;
     }
 
+    public int getAno() {
+        return ano;
+    }
+
     @Override
     public String toString(){
         return this.marca + " " +this.modelo;
@@ -56,5 +62,16 @@ public class Carro extends Veiculo {
     public boolean equals(Object outro) {
         Carro outroCarro = (Carro) outro;
         return this.modelo.equals(outroCarro.getModelo()); // retorna true se os modelos forem iguais
+    }
+
+    @Override
+    public int compareTo(Carro outroCarro) {
+        if (this.ano > outroCarro.getAno()){
+            return 1;
+        }else if (this.ano < outroCarro.getAno()){
+            return -1;
+        }else {
+            return 0;
+        }
     }
 }
