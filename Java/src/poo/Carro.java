@@ -28,7 +28,12 @@ public class Carro extends Veiculo {
 
     @Override
     public String toString(){
-        return this.modelo;
+        return this.marca + " " +this.modelo;
+    }
+
+    @Override
+    public int hashCode() {
+        return this.modelo.charAt(0);
     }
 
     @Override

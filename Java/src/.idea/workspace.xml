@@ -5,13 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/collection/TestaSetString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection/TestaSetCarros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/SalaDeAula.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/SalaDeAula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/TestaArrayCarro.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaArrayCarro.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/TestaArrayListVeiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaArrayListVeiculo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/TestaIgualdade.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaIgualdade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/array/TestaZoologico.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaZoologico.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -49,20 +44,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaSetString">
-    <configuration name="TestaAnimal1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poo.TestaAnimal1" />
-      <module name="texpert" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="poo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestaSetCarros">
     <configuration name="TestaArrayCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collection.TestaArrayCarro" />
       <module name="texpert" />
@@ -102,6 +84,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestaSetCarros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.TestaSetCarros" />
+      <module name="texpert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestaSetString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collection.TestaSetString" />
       <module name="texpert" />
@@ -117,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaSetCarros" />
         <item itemvalue="Application.TestaSetString" />
         <item itemvalue="Application.TestaIgualdade" />
         <item itemvalue="Application.TestaArrayCarro" />
         <item itemvalue="Application.TestaCarro" />
-        <item itemvalue="Application.TestaAnimal1" />
       </list>
     </recent_temporary>
   </component>
