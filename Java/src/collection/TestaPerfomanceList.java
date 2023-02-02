@@ -1,12 +1,15 @@
 package collection;
 
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 public class TestaPerfomanceList {
     public static void main(String[] args) {
 
-        List<Integer> listaInteiros = new ArrayList<>();
+//        List<Integer> listaInteiros = new ArrayList<>();
+        Collection<Integer> listaInteiros = new ArrayList<>();
+
 
         for (int i = 0; i <= 50000; i++){
             listaInteiros.add(i);

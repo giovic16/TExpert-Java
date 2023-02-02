@@ -2,9 +2,17 @@ package poo;
 
 public class Carro extends Veiculo {
 
+    private String placa;
     private String modelo;
     private String marca;
 
+    public Carro() { }
+
+    public Carro(String placa, String marca, String modelo) {
+        this.placa = placa;
+        this.marca = marca;
+        this.modelo = modelo;
+    }
 
     public void trocarMarcha(){
 
@@ -24,6 +32,14 @@ public class Carro extends Veiculo {
 
     public String getModelo() {
         return modelo;
+    }
+
+    public String getPlaca() {
+        return placa;
+    }
+
+    public String getMarca() {
+        return marca;
     }
 
     @Override

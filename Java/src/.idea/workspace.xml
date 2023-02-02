@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/collection/TestaPerfomanceList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection/TestaMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection/TestaPerfomanceList.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaPerfomanceList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection/TestaPorformanceSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaPorformanceSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/collection/TestaPerfomanceList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/collection/TestaPerfomanceList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/collection/TestaPorformanceSet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/collection/TestaPorformanceSet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo/Carro.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo/Carro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -44,9 +49,9 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaPorformanceSet">
-    <configuration name="TestaIgualdade" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.TestaIgualdade" />
+  <component name="RunManager" selected="Application.TestaMap">
+    <configuration name="TestaMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.TestaMap" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
@@ -112,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaMap" />
         <item itemvalue="Application.TestaPorformanceSet" />
         <item itemvalue="Application.TestaPerfomanceList" />
         <item itemvalue="Application.TestaSetCarros" />
         <item itemvalue="Application.TestaSetString" />
-        <item itemvalue="Application.TestaIgualdade" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +143,15 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/poo/Carro.java</url>
+          <line>28</line>
+          <properties class="poo.Carro">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

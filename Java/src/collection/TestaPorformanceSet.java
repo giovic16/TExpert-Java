@@ -1,14 +1,13 @@
 package collection;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class TestaPorformanceSet {
     public static void main(String[] args) {
 
-        Set<Integer> listaInteiros = new HashSet<>();
+//        Set<Integer> listaInteiros = new HashSet<>();
+        Collection<Integer> listaInteiros = new HashSet<>();
+
 
         for (int i = 0; i <= 50000; i++){
             listaInteiros.add(i);
