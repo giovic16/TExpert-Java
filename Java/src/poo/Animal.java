@@ -45,7 +45,7 @@ public class Animal extends SerVivo {
     }
     public void setTamanho(double tamanho) {
         if (tamanho <= 0){
-            throw new RuntimeException("Tamanho inválido!");
+            throw new TamanhoInvalidoException("Tamanho de animal inválido");
         }else{
             this.tamanho = tamanho;
         }

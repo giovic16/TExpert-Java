@@ -3,10 +3,15 @@ package poo;
 public class TestaAnimal1 {
     public static void main(String[] args) {
         Animal animal = new Animal();
-        animal.setTamanho(-10);
 
+        try {
+            animal.setTamanho(-10);
+        }catch (TamanhoInvalidoException e){
+            System.out.println(e.getMessage());
+        }finally {
+            System.out.println("FINALLY");
+        }
 
-
-        System.out.println(animal.getTamanho());
+//        System.out.println(animal.getTamanho());
     }
 }
