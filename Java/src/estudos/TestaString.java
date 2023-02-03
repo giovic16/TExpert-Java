@@ -2,6 +2,7 @@ package estudos;
 
 public class TestaString {
     public static void main(String[] args) {
+        // imutável
         String nome = new String("Giovana");
         String sobrenome = new String("Mendes");
 
