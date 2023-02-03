@@ -26,6 +26,6 @@ public class Carro {
 
     @Override
     public String toString() {
-        return "Carro: " + this.modelo + " - " + this.marca + " - " + this.cor;
+        return "Carro: " + this.modelo.getDescricao() + " - " + this.marca.getDescricao() + " - " + this.cor.getDescricao();
     }
 }
