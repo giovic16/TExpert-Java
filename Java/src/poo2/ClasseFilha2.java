@@ -10,6 +10,6 @@ public class ClasseFilha2 extends ClasseMae2{
     private static final int IDADE_DO_ALUNO = 10;
     public void metodo3() {
         //i++; // não permite alteração por conta do FINAL
-        System.out.println("Valor: " + IDADE_DO_ALUNO);
+        System.out.println("Valor: " + IDADE_DO_ALUNO); // IDADE_DO_ALUNO - constante
     }
 }

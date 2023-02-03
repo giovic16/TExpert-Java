@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo2/TestaArredondamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/Carro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/Cores.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/Marcas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/Modelos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/TestaCarro.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo2/TestaDecimal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo2/TestaDecimal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo2/ClasseFilha2.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo2/ClasseFilha2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo2/ClasseTeste2.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo2/ClasseTeste2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -24,6 +28,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -46,7 +51,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaArredondamento">
+  <component name="RunManager" selected="Application.TestaCarro">
     <configuration name="ClasseTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="poo2.ClasseTeste" />
       <module name="texpert" />
@@ -73,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="poo2.TestaDecimal" />
+    <configuration name="TestaCarro" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo2.TestaCarro" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
@@ -86,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaString2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="estudos.TestaString2" />
+    <configuration name="TestaDecimal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo2.TestaDecimal" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="estudos.*" />
+          <option name="PATTERN" value="poo2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestaCarro" />
         <item itemvalue="Application.TestaArredondamento" />
         <item itemvalue="Application.TestaDecimal" />
         <item itemvalue="Application.TestaWrapper" />
         <item itemvalue="Application.ClasseTeste" />
-        <item itemvalue="Application.TestaString2" />
       </list>
     </recent_temporary>
   </component>
@@ -140,6 +145,11 @@
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/poo2/ClasseFilha.java</url>
+          <line>3</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

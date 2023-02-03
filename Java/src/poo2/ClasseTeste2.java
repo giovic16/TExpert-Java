@@ -8,5 +8,8 @@ public class ClasseTeste2 {
 
         ClasseFilha2 classeFilha2 = new ClasseFilha2();
         classeFilha2.metodo3();
+
+        // Modificadores: final, abstract, static
+        // Modificadores de acesso: public, private, default, protected
     }
 }
