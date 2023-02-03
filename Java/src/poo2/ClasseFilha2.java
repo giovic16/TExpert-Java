@@ -12,4 +12,6 @@ public class ClasseFilha2 extends ClasseMae2{
         //i++; // não permite alteração por conta do FINAL
         System.out.println("Valor: " + IDADE_DO_ALUNO); // IDADE_DO_ALUNO - constante
     }
+
+    public int i = 15;
 }
