@@ -5,12 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/poo2/ClasseFilha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poo2/ClasseMae.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/poo2/ClasseTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/texpert/estudos/TestaString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/estudos/TestaString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo2/ClasseFilha.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo2/ClasseFilha.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo2/ClasseMae.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo2/ClasseMae.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/poo2/ClasseTeste.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/poo2/ClasseTeste.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo2/ClasseFilha.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo2/ClasseFilha.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo2/ClasseMae.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo2/ClasseMae.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poo2/ClasseTeste.java" beforeDir="false" afterPath="$PROJECT_DIR$/poo2/ClasseTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
