@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/estudos/TestaString2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/ClasseFilha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/ClasseMae.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/poo2/ClasseTeste.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/estudos/TestaString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/estudos/TestaString.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -44,13 +48,13 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaString2">
-    <configuration name="TestaListaCarros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.TestaListaCarros" />
+  <component name="RunManager" selected="Application.ClasseTeste">
+    <configuration name="ClasseTeste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="poo2.ClasseTeste" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="collection.*" />
+          <option name="PATTERN" value="poo2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ClasseTeste" />
         <item itemvalue="Application.TestaString2" />
         <item itemvalue="Application.TestaString" />
         <item itemvalue="Application.TestaListaCarros2" />
         <item itemvalue="Application.TestaListaCarros2 (1)" />
-        <item itemvalue="Application.TestaListaCarros" />
       </list>
     </recent_temporary>
   </component>
