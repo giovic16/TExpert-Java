@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/collection/TestaListaCarros2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection/Pessoa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection/TestaListaCarros2.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaListaCarros2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/collection/TestaListaCarros2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/collection/TestaListaCarros2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
