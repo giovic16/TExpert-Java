@@ -1,6 +1,7 @@
 package collection;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.function.Consumer;
 
@@ -13,6 +14,10 @@ public class TestaListaNomes {
 
         // terceira opção - Lambda (sugar sintaxe)
         nomes.forEach(nome -> System.out.println(nome)); // se possui apenas uma instrução, não é necessário ; e {}
+
+        nomes.sort(Comparator.naturalOrder()); // organiza a lista em ordem alfabética
+        nomes.forEach(nome -> System.out.println("Por ordem natural: " + nome));
+
 
         // Segunda opção
 //        nomes.forEach(new Consumer<String>() {

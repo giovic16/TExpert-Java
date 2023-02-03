@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d55e844-dc2f-48f7-9618-d14af11f94e5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/collection/Consumidora.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/collection/TestaListaNomes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/collection/TestaListaCarros.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collection/TestaListaNomes.java" beforeDir="false" afterPath="$PROJECT_DIR$/collection/TestaListaNomes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/texpert/collection/TestaListaNomes.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/texpert/collection/TestaListaNomes.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto-vuex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_rotas" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" beforeDir="false" afterPath="$PROJECT_DIR$/../../aulaVueArquivos/projeto_spa" afterDir="false" />
@@ -46,9 +47,9 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/infopreta/Desktop/texpert/Java/src&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestaListaNomes (1)">
-    <configuration name="TestaCollections" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.TestaCollections" />
+  <component name="RunManager" selected="Application.TestaListaCarros">
+    <configuration name="TestaListaCarros (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.TestaListaCarros" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
@@ -60,12 +61,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaDatas1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="datas.TestaDatas1" />
+    <configuration name="TestaListaCarros (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.TestaListaCarros" />
       <module name="texpert" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="datas.*" />
+          <option name="PATTERN" value="collection.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestaListaCarros" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collection.TestaListaCarros" />
+      <module name="texpert" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collection.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -99,26 +113,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestaMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collection.TestaMap" />
-      <module name="texpert" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collection.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestaListaNomes (1)" />
+        <item itemvalue="Application.TestaListaCarros" />
+        <item itemvalue="Application.TestaListaCarros (2)" />
+        <item itemvalue="Application.TestaListaCarros (1)" />
         <item itemvalue="Application.TestaListaNomes" />
-        <item itemvalue="Application.TestaDatas1" />
-        <item itemvalue="Application.TestaCollections" />
-        <item itemvalue="Application.TestaMap" />
+        <item itemvalue="Application.TestaListaNomes (1)" />
       </list>
     </recent_temporary>
   </component>
